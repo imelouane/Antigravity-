@@ -565,73 +565,40 @@ document.addEventListener('DOMContentLoaded', () => {
         window.location.href = 'index.html';
     }
 
-    /* --- 10. ROBUST FORM HANDLING (AJAX) --- */
-    // Select all forms that send to formsubmit
-    const forms = document.querySelectorAll('form[action^="https://formsubmit.co"]');
+    /* --- 10. ROBUST FORM HANDLING (NATIVE WITH REDIRECT FEEDBACK) --- */
+    // Check URL parameters for success flags
+    const urlParams = new URLSearchParams(window.location.search);
 
+    if (urlParams.has('success') || urlParams.has('call_requested') || urlParams.has('ordered')) {
+        // Remove params from URL so the alert doesn't show again on refresh
+        const newUrl = window.location.pathname;
+        window.history.replaceState({}, document.title, newUrl);
+
+        if (typeof Swal !== 'undefined') {
+            Swal.fire({
+                title: '¡Recibido!',
+                text: 'Hemos recibido tu solicitud y archivos correctamente. Te contactaremos pronto.',
+                icon: 'success',
+                confirmButtonColor: '#003366'
+            });
+        } else {
+            alert("¡Recibido! Hemos recibido tu solicitud correctamente.");
+        }
+    }
+
+    // Optional: Add simple loading state to buttons
+    const forms = document.querySelectorAll('form');
     forms.forEach(form => {
-        form.addEventListener('submit', function (e) {
-            e.preventDefault(); // Stop redirect
-
-            const submitBtn = form.querySelector('button[type="submit"]');
-            const originalText = submitBtn.innerText;
-            submitBtn.innerText = "Enviando...";
-            submitBtn.disabled = true;
-
-            const formData = new FormData(form);
-            // Force JSON response
-            // formData.append('_content_type', 'json'); 
-            // Better implicit via fetch headers, but formsubmit uses _next usually.
-            // We remove _next from formData to avoid redirect response if possible, 
-            // or just ignore the redirect by using fetch.
-
-            fetch(form.action, {
-                method: 'POST',
-                body: formData,
-                headers: {
-                    'Accept': 'application/json'
+        form.addEventListener('submit', function () {
+            // Only if it's a formsubmit form
+            if (this.action.includes('formsubmit')) {
+                const btn = this.querySelector('button[type="submit"]');
+                if (btn) {
+                    btn.innerText = "Enviando...";
+                    // Don't disable immediately or enter key might fail, but visual feedback helps
+                    btn.style.opacity = '0.7';
                 }
-            })
-                .then(response => {
-                    if (response.ok) {
-                        // Success
-                        // Try to use SweetAlert if available, else alert
-                        if (typeof Swal !== 'undefined') {
-                            Swal.fire({
-                                title: '¡Enviado!',
-                                text: 'Hemos recibido tu solicitud correctamente. Te contactaremos pronto.',
-                                icon: 'success',
-                                confirmButtonColor: '#003366'
-                            });
-                        } else {
-                            alert("¡Enviado! Hemos recibido tu solicitud correctamente.");
-                        }
-                        form.reset();
-                        // Close modals if any
-                        if (window.closeBuyModal) window.closeBuyModal();
-                        const callWidget = document.getElementById('callMeWidget');
-                        if (callWidget) callWidget.classList.remove('visible');
-                    } else {
-                        throw new Error("Error en el servidor de correo");
-                    }
-                })
-                .catch(error => {
-                    console.error(error);
-                    if (typeof Swal !== 'undefined') {
-                        Swal.fire({
-                            title: 'Error',
-                            text: 'Hubo un problema al enviar el correo. Por favor, intenta contactar directamente a mohamed.imelouane@gmail.com',
-                            icon: 'error',
-                            confirmButtonColor: '#d33'
-                        });
-                    } else {
-                        alert("Error al enviar. Por favor escribe a mohamed.imelouane@gmail.com");
-                    }
-                })
-                .finally(() => {
-                    submitBtn.innerText = originalText;
-                    submitBtn.disabled = false;
-                });
+            }
         });
     });
 
