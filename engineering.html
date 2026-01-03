@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingeniería | Antigravity MIK</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <i class="fas fa-layer-group"></i>
+            MIK <span>GROUP</span>
+        </div>
+        <nav class="nav-links">
+            <a href="index.html">INICIO</a>
+            <a href="services.html">SERVICIOS</a>
+            <a href="engineering.html" class="active">INGENIERÍA</a>
+            <a href="management.html">GESTIÓN DE PROYECTOS</a>
+            <a href="contact.html">CONTACTO</a>
+        </nav>
+        <div class="menu-icon">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <!-- Simple Hero for Subpages (Optional: Keep video or static image) -->
+    <!-- Let's keep a smaller static header for subpages to differentiate them, OR use the video if user wants consistency. 
+         Based on user request "usa la misma foto de fondo", usually implies for Home. 
+         But standard is subpages have static headers. I'll stick to the content block style for clarity but add a top banner. -->
+
+    <div style="padding: 150px 5% 60px; text-align:center;">
+        <h1 class="reveal" style="font-size: 3rem; margin-bottom: 20px;">INGENIERÍA Y DISEÑO</h1>
+        <p class="reveal" style="font-size: 1.2rem; color: #666; max-width: 800px; margin: 0 auto 50px;">
+            Desarrollamos proyectos de ingeniería de detalle y constructiva para todo el territorio nacional.
+        </p>
+
+        <div class="services-grid"
+            style="display: flex; flex-wrap: wrap; justify-content: center; gap: 40px; margin-top: 40px;">
+            <!-- Feature 1 -->
+            <div class="service-card reveal"
+                style="flex: 1 1 300px; max-width: 400px; text-align: left; height:auto; background:white; pointer-events:none;">
+                <img src="./assets/images/blueprint.png"
+                    style="width: 100%; border-radius: 8px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); margin-bottom: 20px; position:relative; height:200px; object-fit:cover;">
+                <h3 style="margin-bottom: 10px; color:var(--primary-blue);">Cálculo de Estructuras</h3>
+                <p style="color: #555;">Optimizamos cada kilogramo de acero utilizando software de última generación.
+                    Garantizamos seguridad y eficiencia en costes.</p>
+            </div>
+
+            <!-- Feature 2 -->
+            <div class="service-card reveal"
+                style="flex: 1 1 300px; max-width: 400px; text-align: left; height:auto; background:white; pointer-events:none;">
+                <img src="./assets/images/industrial_design.png"
+                    style="width: 100%; border-radius: 8px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); margin-bottom: 20px; position:relative; height:200px; object-fit:cover;">
+                <h3 style="margin-bottom: 10px; color:var(--primary-blue);">Instalaciones Industriales</h3>
+                <p style="color: #555;">Diseño integral de redes de fluidos, electricidad y control. Proyectos "llave en
+                    mano" desde la concepción hasta la puesta en marcha.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Call Me Widget -->
+    <div class="call-me-toggle" id="callMeToggle"><i class="fas fa-phone-alt"></i></div>
+    <div class="call-me-widget" id="callMeWidget">
+        <div class="widget-header">
+            <h4>¿Le llamamos ahora?</h4>
+            <div class="close-widget" id="closeWidget">&times;</div>
+        </div>
+        <form class="call-form" action="https://formsubmit.co/mohamed.imelouane@gmail.com" method="POST">
+            <input type="hidden" name="_subject" value="Solicitud de Llamada (Ingeniería)">
+            <input type="hidden" name="_next" value="http://localhost:3000/engineering.html">
+            <input type="tel" name="phone" placeholder="Su teléfono..." required>
+            <button type="submit">SOLICITAR LLAMADA</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Antigravity MIK - Ingeniería Nacional.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

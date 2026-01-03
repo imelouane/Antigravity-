@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyectos | Antigravity MIK</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo"><i class="fas fa-layer-group"></i> MIK <span>GROUP</span></div>
+        <nav class="nav-links">
+            <a href="index.html">INICIO</a>
+            <a href="company.html">COMPAÑÍA</a>
+            <a href="services.html">SERVICIOS</a>
+            <a href="projects.html" class="active">PROYECTOS</a>
+            <a href="contact.html">CONTACTO</a>
+        </nav>
+        <div class="menu-icon"><i class="fas fa-bars"></i></div>
+    </header>
+
+    <div style="padding: 120px 5%;">
+        <div class="section-header">
+            <h2>Proyectos Destacados</h2>
+            <p>Una selección de nuestro trabajo reciente.</p>
+        </div>
+
+        <div class="gallery-grid">
+            <!-- Using generated images as project placeholders -->
+            <div class="gallery-item" onclick="openLightbox(this)">
+                <img src="./assets/images/metallic_structure.png" alt="Nave Industrial Beta">
+                <div class="card-content"
+                    style="position:absolute; bottom:0; background:rgba(0,0,0,0.7); width:100%; padding:10px;">
+                    <h4 style="color:white; margin:0;">Nave Industrial Beta</h4>
+                </div>
+            </div>
+            <div class="gallery-item" onclick="openLightbox(this)">
+                <img src="./assets/images/photovoltaic.png" alt="Planta Solar Alfa">
+                <div class="card-content"
+                    style="position:absolute; bottom:0; background:rgba(0,0,0,0.7); width:100%; padding:10px;">
+                    <h4 style="color:white; margin:0;">Planta Solar Alfa</h4>
+                </div>
+            </div>
+            <div class="gallery-item" onclick="openLightbox(this)">
+                <img src="./assets/images/industrial_design.png" alt="Planta Química 2">
+                <div class="card-content"
+                    style="position:absolute; bottom:0; background:rgba(0,0,0,0.7); width:100%; padding:10px;">
+                    <h4 style="color:white; margin:0;">Planta Química 2</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox-modal" id="lightboxModal">
+        <div class="lightbox-content">
+            <img id="lightboxImg" class="lightbox-img" src="" alt="Zoom">
+            <div id="lightboxCaption" class="lightbox-caption"></div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Antigravity MIK. Todos los derechos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

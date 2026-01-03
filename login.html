@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Empleados | Antigravity MIK</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <i class="fas fa-layer-group"></i>
+            MIK <span>GROUP</span>
+        </div>
+        <nav class="nav-links">
+            <a href="index.html">Volver a Inicio</a>
+        </nav>
+    </header>
+
+    <div class="login-container">
+        <h2 style="margin-bottom:20px;">Acceso Administración</h2>
+        <form id="loginForm" class="admin-form" style="display:block;">
+            <div style="margin-bottom:15px; text-align:left;">
+                <label>Usuario</label>
+                <input type="text" value="admin" disabled style="width:100%; padding:10px; margin-top:5px;">
+            </div>
+            <div style="margin-bottom:25px; text-align:left;">
+                <label>Contraseña</label>
+                <input type="password" id="password" placeholder="******"
+                    style="width:100%; padding:10px; margin-top:5px;" required>
+                <small style="color:#888;">Contraseña demo: <strong
+                        style="color:var(--primary-blue);">admin123</strong></small>
+            </div>
+            <button type="submit" class="btn-buy" style="width:100%;">ENTRAR</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -4,260 +4,200 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MIK Group | Ingeniería y Tecnología</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <title>Antigravity MIK | Ingeniería Industrial Nacional</title>
     <link rel="stylesheet" href="style.css">
-    <!-- FontAwesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
 <body>
 
-    <!-- Navigation -->
-    <nav class="navbar" id="navbar">
-        <div class="container nav-container">
-            <a href="#" class="logo">MIK</a>
-            <div class="menu-toggle" id="mobile-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-            <ul class="nav-menu">
-                <li><a href="#hero" class="nav-link">Inicio</a></li>
-                <li><a href="#about" class="nav-link">Nosotros</a></li>
-                <li><a href="#services" class="nav-link">Servicios</a></li>
-                <li><a href="#contact" class="nav-link btn-contact">Contactar</a></li>
-            </ul>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <i class="fas fa-layer-group"></i>
+            MIK <span>GROUP</span>
         </div>
-    </nav>
+        <nav class="nav-links">
+            <a href="index.html" class="active" data-i18n="nav_home">INICIO</a>
+            <a href="services.html" data-i18n="nav_services">SERVICIOS</a>
+            <a href="engineering.html" data-i18n="nav_engineering">INGENIERÍA</a>
+            <a href="management.html" data-i18n="nav_management">GESTIÓN DE PROYECTOS</a>
+            <a href="contact.html" data-i18n="nav_contact">CONTACTO</a>
 
-    <!-- Hero Section -->
-    <header id="hero" class="hero">
-        <div class="hero-bg"></div>
-        <div class="hero-overlay"></div>
-        <div class="container hero-content">
-            <h1 class="animate-on-scroll fade-up">Ingeniería que <br>transforma el mundo</h1>
-            <p class="animate-on-scroll fade-up delay-200">Innovación y tecnología para un futuro sostenible.</p>
-            <a href="#services" class="btn btn-primary animate-on-scroll fade-up delay-400">Descubre más</a>
+            <!-- Language Selector -->
+            <div class="lang-selector">
+                <div class="lang-btn">
+                    <i class="fas fa-globe"></i> <span>ES</span> <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="lang-dropdown">
+                    <div class="lang-option" data-lang="es">Español</div>
+                    <div class="lang-option" data-lang="en">English</div>
+                    <div class="lang-option" data-lang="fr">Français</div>
+                </div>
+            </div>
+        </nav>
+        <div class="menu-icon">
+            <i class="fas fa-bars"></i>
         </div>
     </header>
 
-    <!-- About Section -->
-    <section id="about" class="section about">
-        <div class="container about-grid">
-            <div class="about-text animate-on-scroll fade-right">
-                <h2>¿Quiénes somos?</h2>
-                <p>Somos un grupo privado de ingeniería y tecnología fundado en 1956. Buscamos ofrecer a nuestros
-                    clientes las soluciones tecnológicas más avanzadas y disfrutar del reconocimiento internacional por
-                    nuestra independencia y compromiso con la innovación y la calidad.</p>
-                <div class="stats">
-                    <div class="stat-item">
-                        <span class="number" data-target="60">0</span><span>+</span>
-                        <p>Años de experiencia</p>
-                    </div>
-                    <div class="stat-item">
-                        <span class="number" data-target="3000">0</span><span>+</span>
-                        <p>Profesionales</p>
-                    </div>
-                    <div class="stat-item">
-                        <span class="number" data-target="50">0</span><span>+</span>
-                        <p>Países</p>
-                    </div>
-                </div>
+    <!-- Hero Section -->
+    <section class="hero reveal">
+
+        <!-- Hero Slider Container -->
+        <div class="hero-slider">
+
+            <!-- Slide 1: Current Video -->
+            <div class="hero-slide active">
+                <video class="hero-video" autoplay loop muted playsinline
+                    poster="./assets/images/metallic_structure.png">
+                    <source src="./assets/videos/hero_background.mp4" type="video/mp4">
+                </video>
             </div>
-            <div class="about-image animate-on-scroll fade-left">
-                <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
-                    alt="Ingenieros trabajando">
+
+            <!-- Slide 2: Image 1 -->
+            <div class="hero-slide"
+                style="background-image: url('./Fotos/portada%20principal/WhatsApp%20Image%202025-12-27%20at%2020.10.59%20(1).jpeg');">
             </div>
+
+            <!-- Slide 3: Image 2 -->
+            <div class="hero-slide"
+                style="background-image: url('./Fotos/portada%20principal/WhatsApp%20Image%202025-12-27%20at%2020.56.04%20(1).jpeg');">
+            </div>
+
+            <!-- Slide 4: Image 3 -->
+            <div class="hero-slide"
+                style="background-image: url('./Fotos/portada%20principal/WhatsApp%20Image%202025-12-27%20at%2021.03.15.jpeg');">
+            </div>
+
+        </div>
+
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+            <h1 class="reveal" data-i18n="hero_title">INGENIERÍA SIN LÍMITES</h1>
+            <p class="reveal" data-i18n="hero_desc">Soluciones industriales integrales en todo el <strong>Territorio
+                    Nacional</strong>.</p>
+        </div>
+
+        <div class="hero-progress">
+            <div class="progress-bar active"></div>
+            <div class="progress-bar"></div>
+            <div class="progress-bar"></div>
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section id="services" class="section services">
-        <div class="container">
-            <div class="section-header animate-on-scroll fade-up">
-                <h2>Nuestros Mercados y Aceleradores</h2>
-                <p>Innovación disruptiva en sectores clave.</p>
-            </div>
-            <div class="services-grid">
-                <!-- Service 1 -->
-                <div class="service-card animate-on-scroll fade-up delay-100" data-title="Infraestructuras"
-                    data-desc="Diseño y construcción de infraestructuras civiles inteligentes. Utilizamos BIM y gemelos digitales para optimizar cada fase del ciclo de vida del activo, asegurando sostenibilidad y eficiencia operativa.">
-                    <div class="service-icon">
-                        <i class="fa-solid fa-bridge-water"></i>
-                    </div>
-                    <h3>Infraestructuras</h3>
-                    <p>Diseño y construcción de infraestructuras civiles, transporte y arquitectura sostenible.</p>
-                    <button class="service-link btn-text">Leer más <i class="fa-solid fa-arrow-right"></i></button>
-                </div>
-                <!-- Service 2 -->
-                <div class="service-card animate-on-scroll fade-up delay-200" data-title="Energía"
-                    data-desc="Lideramos la transición energética con proyectos de hidrógeno verde, eólica marina y solar fotovoltaica. Nuestras soluciones buscan la descarbonización total de la industria.">
-                    <div class="service-icon">
-                        <i class="fa-solid fa-bolt"></i>
-                    </div>
-                    <h3>Energía</h3>
-                    <p>Proyectos de energías renovables, plantas de generación y transición energética.</p>
-                    <button class="service-link btn-text">Leer más <i class="fa-solid fa-arrow-right"></i></button>
-                </div>
-                <!-- Service 3 -->
-                <div class="service-card animate-on-scroll fade-up delay-300" data-title="Naval"
-                    data-desc="Ingeniería naval de vanguardia. Diseñamos buques eficientes y sostenibles, integrando sistemas de propulsión híbrida y tecnologías de navegación autónoma.">
-                    <div class="service-icon">
-                        <i class="fa-solid fa-ship"></i>
-                    </div>
-                    <h3>Naval</h3>
-                    <p>Ingeniería naval y diseño de buques con software propio líder en el mercado (FORAN).</p>
-                    <button class="service-link btn-text">Leer más <i class="fa-solid fa-arrow-right"></i></button>
-                </div>
-                <!-- Service 4 -->
-                <div class="service-card animate-on-scroll fade-up delay-400" data-title="Aeroespacial"
-                    data-desc="Desde componentes críticos para satélites hasta sistemas de guiado para defensa. Nuestra tecnología aeroespacial es sinónimo de precisión y fiabilidad en entornos extremos.">
-                    <div class="service-icon">
-                        <i class="fa-solid fa-rocket"></i>
-                    </div>
-                    <h3>Aeroespacial</h3>
-                    <p>Tecnología para el espacio, defensa y ciencia. Sistemas de vuelo y cargas de pago.</p>
-                    <button class="service-link btn-text">Leer más <i class="fa-solid fa-arrow-right"></i></button>
+    <!-- Services / Specialties Section -->
+    <section class="services-section">
+        <div class="section-header reveal">
+            <h2 data-i18n="section_lines_title">NUESTRAS LÍNEAS DE NEGOCIO</h2>
+            <p data-i18n="section_lines_desc">Experiencia y solvencia técnica en proyectos de alta envergadura.</p>
+        </div>
+
+        <div class="services-grid">
+
+            <!-- 1. Estructuras -->
+            <div class="service-card" data-category="estructuras">
+                <img src="./assets/images/metallic_structure.png" alt="Estructuras" class="card-img">
+                <div class="card-content">
+                    <div class="card-icon"><i class="fas fa-city"></i></div>
+                    <h3 data-i18n="service_structures">ESTRUCTURAS METÁLICAS</h3>
+                    <p data-i18n="service_structures_desc">Diseño, cálculo y ejecución de naves industriales.</p>
                 </div>
             </div>
+
+            <!-- 2. Fotovoltaica -->
+            <div class="service-card" data-category="fotovoltaica">
+                <img src="./assets/images/photovoltaic.png" alt="Fotovoltaica" class="card-img">
+                <div class="card-content">
+                    <div class="card-icon"><i class="fas fa-solar-panel"></i></div>
+                    <h3 data-i18n="service_solar">ENERGÍA RENOVABLE</h3>
+                    <p data-i18n="service_solar_desc">Plantas fotovoltaicas de gran escala.</p>
+                </div>
+            </div>
+
+            <!-- 3. Automatización -->
+            <div class="service-card" data-category="automatizacion">
+                <img src="./assets/images/automation.png" alt="Automatización" class="card-img">
+                <div class="card-content">
+                    <div class="card-icon"><i class="fas fa-robot"></i></div>
+                    <h3 data-i18n="service_automation">AUTOMATIZACIÓN</h3>
+                    <p data-i18n="service_automation_desc">Industria 4.0 y robótica avanzada.</p>
+                </div>
+            </div>
+
+            <!-- 4. Gestión (Management) -->
+            <div class="service-card" data-category="gestion">
+                <img src="./assets/images/project_management.png" alt="Gestión" class="card-img">
+                <div class="card-content">
+                    <div class="card-icon"><i class="fas fa-tasks"></i></div>
+                    <h3 data-i18n="service_management">GESTIÓN INTEGRAL</h3>
+                    <p data-i18n="service_management_desc">Project Management y dirección facultativa.</p>
+                </div>
+            </div>
+
+            <!-- 5. Diseño -->
+            <div class="service-card" data-category="diseno">
+                <img src="./assets/images/blueprint.png" alt="Diseño" class="card-img">
+                <div class="card-content">
+                    <div class="card-icon"><i class="fas fa-drafting-compass"></i></div>
+                    <h3 data-i18n="service_engineering">INGENIERÍA DE DETALLE</h3>
+                    <p data-i18n="service_engineering_desc">Proyectos técnicos y licencias en toda España.</p>
+                </div>
+            </div>
+
         </div>
     </section>
 
-    <!-- Parallax / Quote Section -->
-    <section class="banner">
-        <div class="banner-overlay"></div>
-        <div class="container banner-content animate-on-scroll zoom-in">
-            <h2>"La tecnología al servicio de la sociedad"</h2>
-            <a href="#contact" class="btn btn-outline">Hablemos</a>
-        </div>
-    </section>
+    <!-- Call Me Widget -->
+    <div class="call-me-toggle" id="callMeToggle">
+        <i class="fas fa-phone-alt"></i>
+    </div>
 
-    <!-- Careers Section -->
-    <section id="careers" class="section careers">
-        <div class="container">
-            <div class="careers-content animate-on-scroll fade-up">
-                <div class="careers-text">
-                    <h2>Únete al equipo MIK</h2>
-                    <p>Buscamos talento apasionado por la tecnología. Si quieres formar parte de proyectos que cambian
-                        el mundo, envíanos tu CV.</p>
-                </div>
-                <div class="careers-form-container">
-                    <form class="careers-form" id="careersForm">
-                        <div class="file-upload-wrapper">
-                            <i class="fa-solid fa-cloud-arrow-up"></i>
-                            <p>Arrastra tu CV aquí o haz clic para subir</p>
-                            <span class="file-note">(Solo formato PDF, Máx. 5MB)</span>
-                            <input type="file" id="cv-upload" accept=".pdf" required>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Enviar Candidatura</button>
-                    </form>
-                </div>
-            </div>
+    <div class="call-me-widget" id="callMeWidget">
+        <div class="widget-header">
+            <h4 data-i18n="widget_title">¿Le llamamos ahora?</h4>
+            <div class="close-widget" id="closeWidget">&times;</div>
         </div>
-    </section>
+        <p style="font-size:0.85rem; margin-bottom:15px; color:#666;" data-i18n="widget_desc">Déjenos su teléfono y un
+            experto le contactará en
+            breve.</p>
+        <form class="call-form" action="https://formsubmit.co/mohamed.imelouane@gmail.com" method="POST">
+            <input type="hidden" name="_subject" value="Solicitud de Llamada (Widget Web)">
+            <input type="hidden" name="_next" value="http://localhost:3000?call_requested=true">
+            <input type="tel" name="phone" placeholder="Su teléfono..." required>
+            <button type="submit" data-i18n="widget_btn">SOLICITAR LLAMADA</button>
+        </form>
+    </div>
 
-    <!-- Contact Section -->
-    <section id="contact" class="section contact">
-        <div class="container contact-container">
-            <div class="contact-info animate-on-scroll fade-right">
-                <h2>Contacta con nosotros</h2>
-                <p>Estamos aquí para ayudarte a desarrollar tu próximo gran proyecto.</p>
-                <div class="info-item">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <p>Av. de Zugazarte, 56, 48930 Getxo, Bizkaia</p>
-                </div>
-                <div class="info-item">
-                    <i class="fa-solid fa-phone"></i>
-                    <p>+34 902 10 10 10</p>
-                </div>
-                <div class="info-item">
-                    <i class="fa-solid fa-envelope"></i>
-                    <a href="mailto:mohamed.imelouane@gmail.com" class="contact-link">mohamed.imelouane@gmail.com</a>
-                </div>
-            </div>
-
-            <form class="contact-form animate-on-scroll fade-left" id="contactForm">
-                <div class="form-group">
-                    <label for="name">Nombre Completo</label>
-                    <input type="text" id="name" placeholder="Tu nombre" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Correo Electrónico</label>
-                    <input type="email" id="email" placeholder="tucorreo@empresa.com" required>
-                </div>
-                <div class="form-group">
-                    <label for="subject">Asunto</label>
-                    <select id="subject">
-                        <option value="general">Consulta General</option>
-                        <option value="projects">Nuevos Proyectos</option>
-                        <option value="careers">Empleo</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="message">Mensaje</label>
-                    <textarea id="message" rows="5" placeholder="¿En qué podemos ayudarte?" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary btn-block">Enviar Mensaje</button>
-            </form>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container footer-content">
-            <div class="footer-col">
-                <h3>MIK</h3>
-                <p>Ingeniería y Tecnología de referencia internacional.</p>
-            </div>
-            <div class="footer-col">
-                <h4>Enlaces</h4>
-                <ul>
-                    <li><a href="#hero">Inicio</a></li>
-                    <li><a href="#services">Servicios</a></li>
-                    <li><a href="#contact">Contacto</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h4>Legal</h4>
-                <ul>
-                    <li><a href="#">Privacidad</a></li>
-                    <li><a href="#">Cookies</a></li>
-                    <li><a href="#">Aviso Legal</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h4>Síguenos</h4>
-                <div class="social-links">
-                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                </div>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2024 MIK Group. Todos los derechos reservados.</p>
-        </div>
-    </footer>
-
-    <!-- Service Modal -->
-    <div id="serviceModal" class="modal">
+    <!-- Gallery Modal (Grid) -->
+    <div class="modal" id="galleryModal">
+        <div class="close-btn" onclick="closeModal()">&times;</div>
         <div class="modal-content">
-            <span class="close-modal">&times;</span>
             <div class="modal-header">
-                <div class="modal-icon"><i class="fa-solid fa-layer-group"></i></div>
-                <h2 id="modalTitle">Título del Servicio</h2>
+                <h2 id="modalTitle">Título</h2>
             </div>
-            <div class="modal-body">
-                <p id="modalDescription">Descripción detallada del servicio...</p>
-                <div class="modal-actions">
-                    <a href="#contact" class="btn btn-primary" onclick="closeModal()">Solicitar Información</a>
-                </div>
+            <div class="gallery-grid" id="galleryGrid">
+                <!-- JS injects images here -->
             </div>
         </div>
     </div>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox-modal" id="lightboxModal">
+        <div class="lightbox-content">
+            <img id="lightboxImg" class="lightbox-img" src="" alt="Zoom">
+            <div id="lightboxCaption" class="lightbox-caption"></div>
+        </div>
+    </div>
+
+    <footer>
+        <p data-i18n="footer_copy">&copy; 2025 Antigravity MIK - Ingeniería Nacional.</p>
+        <div style="margin-top: 10px; font-size: 1.2rem;">
+            <i class="fab fa-linkedin" style="margin: 0 10px;"></i>
+            <i class="fas fa-envelope" style="margin: 0 10px;"></i>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>

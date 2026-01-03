@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Proyectos | Antigravity MIK</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <i class="fas fa-layer-group"></i>
+            MIK <span>GROUP</span>
+        </div>
+        <nav class="nav-links">
+            <a href="index.html">INICIO</a>
+            <a href="services.html">SERVICIOS</a>
+            <a href="engineering.html">INGENIERÍA</a>
+            <a href="management.html" class="active">GESTIÓN DE PROYECTOS</a>
+            <a href="contact.html">CONTACTO</a>
+        </nav>
+        <div class="menu-icon">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <!-- Content -->
+    <div style="padding: 150px 5% 60px; text-align:center; background-color: #f9f9f9;">
+        <h1 class="reveal" style="font-size: 3rem; margin-bottom: 20px;">GESTIÓN INTEGRAL DE PROYECTOS</h1>
+        <p class="reveal" style="font-size: 1.2rem; color: #666; max-width: 800px; margin: 0 auto 50px;">
+            Aseguramos el éxito de su inversión mediante una dirección técnica rigurosa y transparente.
+        </p>
+
+        <div
+            style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 40px;">
+            <!-- Feature 1 -->
+            <div class="reveal"
+                style="background: white; padding: 30px; border-radius: 8px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); transition-delay:0.1s;">
+                <i class="fas fa-clipboard-check"
+                    style="font-size: 3rem; color: var(--accent-orange); margin-bottom: 20px;"></i>
+                <h3 style="margin-bottom: 10px;">Dirección Facultativa</h3>
+                <p style="color: #555;">Supervisión in-situ de la ejecución de obra, garantizando el cumplimiento de
+                    normativas y calidades.</p>
+            </div>
+
+            <!-- Feature 2 -->
+            <div class="reveal"
+                style="background: white; padding: 30px; border-radius: 8px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); transition-delay:0.2s;">
+                <i class="fas fa-chart-line"
+                    style="font-size: 3rem; color: var(--accent-orange); margin-bottom: 20px;"></i>
+                <h3 style="margin-bottom: 10px;">Control de Costes y Plazos</h3>
+                <p style="color: #555;">Metodologías ágiles para evitar desviaciones presupuestarias y entregar su
+                    proyecto a tiempo.</p>
+            </div>
+
+            <!-- Feature 3 -->
+            <div class="reveal"
+                style="background: white; padding: 30px; border-radius: 8px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); transition-delay:0.3s;">
+                <i class="fas fa-file-contract"
+                    style="font-size: 3rem; color: var(--accent-orange); margin-bottom: 20px;"></i>
+                <h3 style="margin-bottom: 10px;">Gestión de Licencias</h3>
+                <p style="color: #555;">Tramitación completa de peromisos con administraciones locales y nacionales.</p>
+            </div>
+        </div>
+
+        <img class="reveal" src="./assets/images/project_management.png"
+            style="width: 100%; max-width: 900px; border-radius: 8px; margin-top: 60px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+    </div>
+
+    <!-- Call Me Widget -->
+    <div class="call-me-toggle" id="callMeToggle"><i class="fas fa-phone-alt"></i></div>
+    <div class="call-me-widget" id="callMeWidget">
+        <div class="widget-header">
+            <h4>¿Le llamamos ahora?</h4>
+            <div class="close-widget" id="closeWidget">&times;</div>
+        </div>
+        <form class="call-form" action="https://formsubmit.co/mohamed.imelouane@gmail.com" method="POST">
+            <input type="hidden" name="_subject" value="Solicitud de Llamada (Management)">
+            <input type="tel" name="phone" placeholder="Su teléfono..." required>
+            <button type="submit">SOLICITAR LLAMADA</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Antigravity MIK - Ingeniería Nacional.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

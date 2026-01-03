@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Administración | Antigravity MIK</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <i class="fas fa-layer-group"></i>
+            MIK <span>ADMIN</span>
+        </div>
+        <nav class="nav-links">
+            <a href="products.html" target="_blank">Ver Productos en Web</a>
+            <a href="#" onclick="logout()" style="color:#ff4444;">Cerrar Sesión</a>
+        </nav>
+    </header>
+
+    <div class="admin-container">
+        <div class="admin-header">
+            <h2>Gestión de Productos</h2>
+            <span style="color:#666; font-size:0.9rem;">Los cambios se guardan en tu navegador local.</span>
+        </div>
+
+        <!-- Add Form -->
+        <h3 style="margin-bottom:15px;">Añadir Nuevo Producto</h3>
+        <form id="productForm" class="admin-form">
+            <div>
+                <label>Título del Producto</label>
+                <input type="text" id="pTitle" required style="width:100%; padding:8px; margin-top:5px;"
+                    placeholder="Ej. Brazo Robótico KUKA">
+            </div>
+            <div>
+                <label>Descripción Corta</label>
+                <textarea id="pDesc" rows="3" required style="width:100%; padding:8px; margin-top:5px;"
+                    placeholder="Detalles técnicos..."></textarea>
+            </div>
+            <div>
+                <label>Precio (€)</label>
+                <input type="number" id="pPrice" required style="width:100%; padding:8px; margin-top:5px;"
+                    placeholder="Ej. 15000">
+            </div>
+            <div>
+                <label>Fotos del Producto (Máx 8)</label>
+                <!-- File input for base64 conversion demo -->
+                <input type="file" id="pImg" accept="image/*" multiple style="margin-top:5px;">
+                <p style="font-size:0.8rem; color:#888;">Nota: Sube hasta 8 imágenes pequeñas (menos de 2MB total) para
+                    esta demo.</p>
+            </div>
+            <button type="submit" class="btn-buy" style="background:var(--accent-green, #28a745);">PUBLICAR
+                PRODUCTO</button>
+        </form>
+
+        <!-- List -->
+        <h3 style="margin-bottom:15px; border-top:1px solid #eee; padding-top:20px;">Productos Activos</h3>
+        <div class="product-list-admin" id="adminProductList">
+            <!-- Filled by JS -->
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
