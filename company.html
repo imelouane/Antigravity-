@@ -35,47 +35,56 @@
         </p>
     </div>
 
-    <!-- Executive Summary -->
+    <!-- Who We Are Section -->
     <section class="section-container" style="padding: 80px 10%;">
         <div class="two-col-grid"
-            style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 60px; align-items: center;">
+            style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 60px; align-items: start;">
             <div class="content-col reveal">
-                <h2 style="margin-bottom: 25px;">Nuestra Trayectoria</h2>
-                <p style="margin-bottom: 20px; text-align: justify; color: #555;">
-                    Fundada con la visión de transformar el sector industrial, Antigravity MIK se ha consolidado como un
-                    referente en ingeniería técnica y gestión de proyectos. Analizamos cada desafío desde una
-                    perspectiva integral, combinando rigor técnico con soluciones innovadoras.
+                <h2 style="margin-bottom: 25px;">Quiénes Somos</h2>
+                <p style="margin-bottom: 20px; text-align: justify; color: #555; line-height: 1.8;">
+                    Consultomik es una consultora técnica especializada en ingeniería aplicada a sectores industriales y
+                    de servicios. Nuestra misión es aportar soluciones que mejoren la productividad, seguridad y
+                    sostenibilidad de tus operaciones.
                 </p>
-                <p style="text-align: justify; color: #555;">
-                    Nos distinguimos por nuestra capacidad de adaptación y por ofrecer resultados medibles que impactan
-                    directamente en la rentabilidad y eficiencia de nuestros clientes.
+                <p style="text-align: justify; color: #555; line-height: 1.8;">
+                    Combinamos experiencia técnica con enfoque orientado a resultados, trabajando codo a codo con
+                    nuestros clientes para convertir retos en éxitos.
                 </p>
+
+                <div class="methodology-box"
+                    style="margin-top: 40px; background: #f9f9f9; padding: 30px; border-left: 4px solid var(--accent-orange);">
+                    <h3 style="margin-bottom: 15px; font-size: 1.2rem;">Nuestra Metodología</h3>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="margin-bottom: 15px; display: flex; gap: 10px;">
+                            <i class="fas fa-search" style="color: var(--primary-blue); margin-top: 5px;"></i>
+                            <span>Diagnóstico técnico detallado.</span>
+                        </li>
+                        <li style="margin-bottom: 15px; display: flex; gap: 10px;">
+                            <i class="fas fa-pencil-ruler" style="color: var(--primary-blue); margin-top: 5px;"></i>
+                            <span>Diseño de solución práctica y escalable.</span>
+                        </li>
+                        <li style="margin-bottom: 15px; display: flex; gap: 10px;">
+                            <i class="fas fa-cogs" style="color: var(--primary-blue); margin-top: 5px;"></i>
+                            <span>Implementación eficiente con métricas de rendimiento.</span>
+                        </li>
+                        <li style="display: flex; gap: 10px;">
+                            <i class="fas fa-headset" style="color: var(--primary-blue); margin-top: 5px;"></i>
+                            <span>Acompañamiento y soporte tras entrega.</span>
+                        </li>
+                    </ul>
+                </div>
             </div>
             <div class="image-col reveal">
-                <img src="./assets/images/project_management.png" alt="Oficinas MIK"
-                    style="width: 100%; border-radius: 4px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
-            </div>
-        </div>
-    </section>
-
-    <!-- Mission & Values -->
-    <section class="values-section" style="background: #f4f4f4; padding: 80px 10%;">
-        <div class="section-header center" style="text-align: center; margin-bottom: 50px;">
-            <h2>Misión y Valores</h2>
-        </div>
-        <div class="values-grid"
-            style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
-            <div class="value-card"
-                style="background: white; padding: 30px; border-radius: 4px; border-left: 4px solid var(--accent-orange);">
-                <h3>Misión</h3>
-                <p style="color: #666; margin-top: 10px;">Proveer soluciones de ingeniería de alto valor añadido que
-                    impulsen el desarrollo sostenible de la industria nacional.</p>
-            </div>
-            <div class="value-card"
-                style="background: white; padding: 30px; border-radius: 4px; border-left: 4px solid var(--primary-blue);">
-                <h3>Visión</h3>
-                <p style="color: #666; margin-top: 10px;">Ser la consultora de referencia técnica para grandes proyectos
-                    de infraestructura y energía.</p>
+                <img src="./assets/images/project_management.png" alt="Consultomik Team"
+                    style="width: 100%; border-radius: 4px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); margin-bottom: 30px;">
+                <!-- CTAs for Company Page -->
+                <div style="display: flex; flex-direction: column; gap: 15px;">
+                    <a href="contact.html" class="cta-button primary" style="text-align: center;">Agenda una
+                        consultoría</a>
+                    <a href="services.html" class="cta-button secondary"
+                        style="text-align: center; border-color: var(--primary-blue); color: var(--primary-blue);">Descarga
+                        nuestro folleto</a>
+                </div>
             </div>
         </div>
     </section>
@@ -133,7 +142,37 @@
     </section>
 
     <footer>
-        <p>&copy; 2025 Antigravity MIK. Todos los derechos reservados.</p>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h4>Contacto</h4>
+                <p><strong>Antigravity MIK</strong></p>
+                <p>Calle Ejemplo 123, Polígono Industrial<br>28000 Madrid, España</p>
+                <p><i class="fas fa-envelope"></i> contacto@consultomik.es</p>
+                <p><i class="fas fa-phone"></i> +34 900 000 000</p>
+            </div>
+            <div class="footer-col">
+                <h4>Enlaces Legales</h4>
+                <a href="#">Política de Privacidad</a>
+                <a href="#">Términos y Condiciones</a>
+                <a href="#">Política de Cookies</a>
+                <a href="contact.html">Trabaja con nosotros</a>
+            </div>
+            <div class="footer-col">
+                <h4>Certificaciones</h4>
+                <p>Comprometidos con la calidad y el medio ambiente.</p>
+                <div style="display: flex; gap: 10px; margin-top: 10px;">
+                    <div
+                        style="background: white; color: #333; padding: 5px 10px; font-weight: bold; font-size: 0.8rem; border-radius: 2px;">
+                        ISO 9001</div>
+                    <div
+                        style="background: white; color: #333; padding: 5px 10px; font-weight: bold; font-size: 0.8rem; border-radius: 2px;">
+                        ISO 14001</div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Antigravity MIK - Ingeniería Nacional. Todos los derechos reservados.</p>
+        </div>
     </footer>
     <script src="script.js"></script>
 </body>
