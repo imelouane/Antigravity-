@@ -69,4 +69,104 @@
     <script src="script.js"></script>
 </body>
 
+</html><!DOCTYPE html>
+<html lang='es'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Proyectos | Consultomik</title>
+    <meta name='description' content='Proyectos de ingeniería industrial, dirección de obra fotovoltaica y cálculo de estructuras metálicas.'>
+    <link rel='stylesheet' href='style.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css'>
+</head>
+<body>
+
+    <header>
+        <div class='logo'><i class='fas fa-layer-group'></i> MIK <span>GROUP</span></div>
+        <nav class='nav-links'>
+            <a href='index.html'>INICIO</a>
+            <a href='company.html'>COMPAÑÍA</a>
+            <a href='services.html'>SERVICIOS</a>
+            <a href='projects.html' class='active'>PROYECTOS</a>
+            <a href='contact.html'>CONTACTO</a>
+        </nav>
+        <div class='menu-icon'><i class='fas fa-bars'></i></div>
+    </header>
+
+    <div style='padding: 120px 5%; background: var(--bg-light-gray); min-height: 100vh;'>
+        <div class='section-header'>
+            <h2>Experiencia Reciente</h2>
+            <p>Selección de intervenciones técnicas en energía e industria.</p>
+        </div>
+
+        <div class='gallery-grid'>
+            
+            <!-- Project 1 -->
+            <div class='gallery-item' onclick='openLightbox(this)'>
+                <img src='./assets/images/photovoltaic.png' alt='Dirección de Obra Planta FV 50MW'>
+                <div class='card-content' style='position:absolute; bottom:0; background:rgba(0,0,0,0.8); width:100%; padding:15px;'>
+                    <h4 style='color:white; margin-bottom:5px; font-size: 1rem;'>Planta FV 50MW - Extremadura</h4>
+                    <p style='color:#ccc; font-size:0.8rem;'>Dirección Facultativa y control de ejecución mecánica.</p>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class='gallery-item' onclick='openLightbox(this)'>
+                <img src='./assets/images/metallic_structure.png' alt='Estructura Nave Logística'>
+                <div class='card-content' style='position:absolute; bottom:0; background:rgba(0,0,0,0.8); width:100%; padding:15px;'>
+                    <h4 style='color:white; margin-bottom:5px; font-size: 1rem;'>Nave Logística 12.000m</h4>
+                    <p style='color:#ccc; font-size:0.8rem;'>Cálculo estructural y asistencia técnica en montaje.</p>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class='gallery-item' onclick='openLightbox(this)'>
+                <img src='./assets/images/industrial_design.png' alt='Instalación Térmica Industrial'>
+                <div class='card-content' style='position:absolute; bottom:0; background:rgba(0,0,0,0.8); width:100%; padding:15px;'>
+                    <h4 style='color:white; margin-bottom:5px; font-size: 1rem;'>Adecuación Instalaciones Fabriles</h4>
+                    <p style='color:#ccc; font-size:0.8rem;'>Proyecto de legalización RITE y contraincendios.</p>
+                </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class='gallery-item' onclick='openLightbox(this)'>
+                <img src='./assets/images/project_management.png' alt='Project Management'>
+                <div class='card-content' style='position:absolute; bottom:0; background:rgba(0,0,0,0.8); width:100%; padding:15px;'>
+                    <h4 style='color:white; margin-bottom:5px; font-size: 1rem;'>Ampliación Línea Productiva</h4>
+                    <p style='color:#ccc; font-size:0.8rem;'>Gestión integral del proyecto (EPCM).</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Lightbox Modal -->
+    <div class='lightbox-modal' id='lightboxModal'>
+        <div class='lightbox-content'>
+            <img id='lightboxImg' class='lightbox-img' src='' alt='Zoom'>
+            <div id='lightboxCaption' class='lightbox-caption'></div>
+        </div>
+    </div>
+
+    <footer>
+        <div class='footer-content'>
+            <div class='footer-col'>
+                <h4>Contacto</h4>
+                <p><strong>Antigravity MIK</strong></p>
+                <p>Ingeniería y Consultoría Técnica</p>
+                <p><i class='fas fa-envelope'></i> contacto@consultomik.es</p>
+            </div>
+            <div class='footer-col'>
+                <h4>Servicios</h4>
+                <a href='services.html'>Estructuras</a>
+                <a href='services.html'>Energías Renovables</a>
+                <a href='services.html'>Consultoría Técnica</a>
+            </div>
+            <div class='footer-col'>
+                <p>&copy; 2025 Consultomik.</p>
+            </div>
+        </div>
+    </footer>
+    <script src='script.js'></script>
+</body>
 </html>
