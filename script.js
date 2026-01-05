@@ -325,10 +325,32 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Event Listeners
+    if (langBtnText && langBtnText.parentElement) {
+        const langBtn = langBtnText.parentElement;
+        langBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const dropdown = langBtn.nextElementSibling;
+            if (dropdown) {
+                dropdown.classList.toggle('active');
+            }
+        });
+
+        // Close dropdown when clicking outside
+        document.addEventListener('click', (e) => {
+            const dropdown = document.querySelector('.lang-dropdown');
+            if (dropdown && dropdown.classList.contains('active') && !langBtn.contains(e.target)) {
+                dropdown.classList.remove('active');
+            }
+        });
+    }
+
     langOptions.forEach(opt => {
         opt.addEventListener('click', () => {
             const lang = opt.getAttribute('data-lang');
             setLanguage(lang);
+            // Hide dropdown after selection
+            const dropdown = document.querySelector('.lang-dropdown');
+            if (dropdown) dropdown.classList.remove('active');
         });
     });
 

@@ -295,7 +295,8 @@ header.scrolled .lang-btn {
     z-index: 1001;
 }
 
-.lang-selector:hover .lang-dropdown {
+.lang-selector:hover .lang-dropdown,
+.lang-dropdown.active {
     display: flex;
     animation: fadeIn 0.3s;
 }
@@ -516,7 +517,7 @@ header.scrolled .lang-btn {
 
 .services-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     /* Responsive */
     gap: 30px;
 }
@@ -1161,14 +1162,229 @@ footer {
     background: var(--accent-orange);
 }
 
-@keyframes slideInRight {
-    from {
-        transform: translateX(100px);
-        opacity: 0;
+to {
+    transform: translateX(0);
+    opacity: 1;
+}
+}
+
+/* --- Mobile Refinements (Small Screens < 600px) --- */
+@media (max-width: 600px) {
+
+    /* Revert "Cobra" horizontal style to vertical stack for small phones */
+    .service-card {
+        flex-direction: column;
+        height: auto;
+        /* Allow content to dictate height */
+        margin: 0;
+        /* Reset negative margin */
+        width: 100%;
+        min-height: auto;
     }
 
-    to {
-        transform: translateX(0);
-        opacity: 1;
+    .card-img {
+        position: relative;
+        width: 100%;
+        height: 200px;
+        /* Fixed height for image */
+        left: auto;
+    }
+
+    .card-content {
+        margin-left: 0;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .hero h1 {
+        font-size: 1.8rem;
+        /* Smaller title */
+        line-height: 1.2;
+    }
+
+    .hero p {
+        font-size: 1rem;
+        padding: 0 10px;
+    }
+
+    /* Admin Panel Mobile */
+    .admin-header {
+        flex-direction: column;
+        gap: 15px;
+        align-items: flex-start;
+    }
+
+    .admin-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .admin-item>div {
+        width: 100%;
+    }
+
+    .btn-delete {
+        width: 100%;
+    }
+
+    /* Forms */
+    .login-container,
+    .admin-container,
+    .contact-container {
+        margin: 100px 20px 40px;
+        padding: 20px;
+        width: auto;
+    }
+
+    /* Modals */
+    .modal-content {
+        margin: 60px 10px 20px;
+        width: auto;
+    }
+
+    .close-btn {
+        right: 20px;
+        top: 20px;
+    }
+
+    /* Navigation adjustments */
+    .nav-links {
+        top: 70px;
+        /* Adjust if header is smaller */
+        height: calc(100vh - 70px);
     }
 }
+/* --- NEW SECTIONS CSS --- */
+
+/* Hero Buttons */
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.cta-button {
+    padding: 12px 30px;
+    border-radius: 4px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s;
+    font-size: 0.9rem;
+}
+
+.cta-button.primary {
+    background: var(--accent-orange);
+    color: white;
+    border: 2px solid var(--accent-orange);
+}
+
+.cta-button.primary:hover {
+    background: transparent;
+    color: white;
+}
+
+.cta-button.secondary {
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+.cta-button.secondary:hover {
+    background: white;
+    color: var(--primary-blue);
+}
+
+/* Trust Section */
+.trust-section {
+    padding: 80px 5%;
+    background: #fafafa;
+    text-align: center;
+}
+
+.metrics-grid {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+}
+
+.metric-item {
+    text-align: center;
+}
+
+.metric-number {
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--primary-blue);
+    display: block;
+    margin-bottom: 5px;
+}
+
+.metric-label {
+    font-size: 1rem;
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.logos-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    opacity: 0.6;
+}
+
+.logo-placeholder {
+    background: #e0e0e0;
+    width: 140px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    color: #777;
+    border-radius: 4px;
+    font-size: 0.8rem;
+}
+
+/* Values Section (Inline styles in HTML were removed/moved here ideally, but for now this supplements) */
+.values-section {
+    padding: 80px 5%;
+    background: white;
+    text-align: center;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.value-item {
+    padding: 30px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    transition: transform 0.3s;
+}
+
+.value-item:hover {
+    transform: translateY(-5px);
+}
+
+.value-item h3 {
+    margin: 20px 0 15px;
+    font-size: 1.2rem;
+}
+
+.value-item p {
+    color: #666;
+    font-size: 0.95rem;
+}
+

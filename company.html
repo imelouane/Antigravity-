@@ -26,32 +26,111 @@
         <div class="menu-icon"><i class="fas fa-bars"></i></div>
     </header>
 
-    <div style="padding: 120px 10%; text-align: center;">
-        <h1 style="margin-bottom: 40px; color: var(--primary-blue);">SOBRE NOSOTROS</h1>
-        <p style="font-size: 1.1rem; color: #555; max-width: 800px; margin: 0 auto 40px;">
-            Antigravity MIK es una empresa líder en ingeniería y construcción industrial.
-            Con más de una década de experiencia, nos especializamos en ofrecer soluciones integrales
-            que combinan innovación, sostenibilidad y eficiencia.
+    <!-- Hero Page -->
+    <div class="page-hero"
+        style="background: var(--primary-blue); padding: 150px 5% 80px; text-align: center; color: white;">
+        <h1 class="reveal">LIDERAZGO TÉCNICO Y COMPROMISO</h1>
+        <p class="reveal" style="max-width: 700px; margin: 20px auto 0; font-size: 1.1rem; opacity: 0.9;">
+            Consultoría e ingeniería multidisciplinar orientada a la excelencia y la sostenibilidad industrial.
         </p>
-        <img src="./assets/images/project_management.png"
-            style="width: 100%; max-width: 800px; border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
-
-        <div style="text-align: left; max-width: 800px; margin: 60px auto;">
-            <h3 style="margin-bottom: 20px;">Nuestra Misión</h3>
-            <p style="margin-bottom: 40px;">Transformar la industria a través de ingeniería de precisión y energías
-                renovables.</p>
-
-            <h3 style="margin-bottom: 20px;">Nuestros Valores</h3>
-            <ul style="list-style: none; padding-left: 20px;">
-                <li style="margin-bottom: 10px;"><i class="fas fa-check" style="color: var(--accent-orange);"></i>
-                    Excelencia Técnica</li>
-                <li style="margin-bottom: 10px;"><i class="fas fa-check" style="color: var(--accent-orange);"></i>
-                    Compromiso con el Cliente</li>
-                <li style="margin-bottom: 10px;"><i class="fas fa-check" style="color: var(--accent-orange);"></i>
-                    Innovación Constante</li>
-            </ul>
-        </div>
     </div>
+
+    <!-- Executive Summary -->
+    <section class="section-container" style="padding: 80px 10%;">
+        <div class="two-col-grid"
+            style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 60px; align-items: center;">
+            <div class="content-col reveal">
+                <h2 style="margin-bottom: 25px;">Nuestra Trayectoria</h2>
+                <p style="margin-bottom: 20px; text-align: justify; color: #555;">
+                    Fundada con la visión de transformar el sector industrial, Antigravity MIK se ha consolidado como un
+                    referente en ingeniería técnica y gestión de proyectos. Analizamos cada desafío desde una
+                    perspectiva integral, combinando rigor técnico con soluciones innovadoras.
+                </p>
+                <p style="text-align: justify; color: #555;">
+                    Nos distinguimos por nuestra capacidad de adaptación y por ofrecer resultados medibles que impactan
+                    directamente en la rentabilidad y eficiencia de nuestros clientes.
+                </p>
+            </div>
+            <div class="image-col reveal">
+                <img src="./assets/images/project_management.png" alt="Oficinas MIK"
+                    style="width: 100%; border-radius: 4px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission & Values -->
+    <section class="values-section" style="background: #f4f4f4; padding: 80px 10%;">
+        <div class="section-header center" style="text-align: center; margin-bottom: 50px;">
+            <h2>Misión y Valores</h2>
+        </div>
+        <div class="values-grid"
+            style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+            <div class="value-card"
+                style="background: white; padding: 30px; border-radius: 4px; border-left: 4px solid var(--accent-orange);">
+                <h3>Misión</h3>
+                <p style="color: #666; margin-top: 10px;">Proveer soluciones de ingeniería de alto valor añadido que
+                    impulsen el desarrollo sostenible de la industria nacional.</p>
+            </div>
+            <div class="value-card"
+                style="background: white; padding: 30px; border-radius: 4px; border-left: 4px solid var(--primary-blue);">
+                <h3>Visión</h3>
+                <p style="color: #666; margin-top: 10px;">Ser la consultora de referencia técnica para grandes proyectos
+                    de infraestructura y energía.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team-section" style="padding: 80px 10%;">
+        <div class="section-header" style="text-align: center; margin-bottom: 50px;">
+            <h2>Nuestro Equipo Directivo</h2>
+            <p>Expertos liderando el cambio.</p>
+        </div>
+        <div class="team-grid"
+            style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px; text-align: center;">
+
+            <!-- Team Member 1 -->
+            <div class="team-member">
+                <div class="member-img"
+                    style="width: 150px; height: 150px; background: #ddd; border-radius: 50%; margin: 0 auto 20px; overflow: hidden;">
+                    <!-- Placeholder or real image if available -->
+                    <img src="./assets/images/automation.png"
+                        style="width:100%; height:100%; object-fit:cover; opacity:0.5;">
+                </div>
+                <h4 style="color: var(--primary-blue); margin-bottom: 5px;">Ing. Juan Pérez</h4>
+                <p style="font-size: 0.9rem; color: #888; font-weight: 600;">Director General</p>
+                <p style="font-size: 0.85rem; color: #666; margin-top: 10px;">20+ años en gestión de proyectos
+                    industriales.</p>
+            </div>
+
+            <!-- Team Member 2 -->
+            <div class="team-member">
+                <div class="member-img"
+                    style="width: 150px; height: 150px; background: #ddd; border-radius: 50%; margin: 0 auto 20px; overflow: hidden;">
+                    <img src="./assets/images/blueprint.png"
+                        style="width:100%; height:100%; object-fit:cover; opacity:0.5;">
+                </div>
+                <h4 style="color: var(--primary-blue); margin-bottom: 5px;">Arq. María López</h4>
+                <p style="font-size: 0.9rem; color: #888; font-weight: 600;">Directora de Proyectos</p>
+                <p style="font-size: 0.85rem; color: #666; margin-top: 10px;">Especialista en diseño sostenible y
+                    eficiencia.</p>
+            </div>
+
+            <!-- Team Member 3 -->
+            <div class="team-member">
+                <div class="member-img"
+                    style="width: 150px; height: 150px; background: #ddd; border-radius: 50%; margin: 0 auto 20px; overflow: hidden;">
+                    <img src="./assets/images/photovoltaic.png"
+                        style="width:100%; height:100%; object-fit:cover; opacity:0.5;">
+                </div>
+                <h4 style="color: var(--primary-blue); margin-bottom: 5px;">Ing. Carlos Ruiz</h4>
+                <p style="font-size: 0.9rem; color: #888; font-weight: 600;">Jefe de Ingeniería</p>
+                <p style="font-size: 0.85rem; color: #666; margin-top: 10px;">Experto en cálculo de estructuras y
+                    renovables.</p>
+            </div>
+
+        </div>
+    </section>
 
     <footer>
         <p>&copy; 2025 Antigravity MIK. Todos los derechos reservados.</p>
