@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyectos | Antigravity MIK</title>
+    <title>Proyectos Recientes | Consultomik</title>
+    <meta name="description"
+        content="Selecci√≥n de experiencia en direcci√≥n de obra fotovoltaica, c√°lculo de estructuras met√°licas y proyectos de ingenier√≠a industrial.">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
@@ -15,43 +17,62 @@
         <div class="logo"><i class="fas fa-layer-group"></i> MIK <span>GROUP</span></div>
         <nav class="nav-links">
             <a href="index.html">INICIO</a>
-            <a href="company.html">COMPA√ë√çA</a>
             <a href="services.html">SERVICIOS</a>
-            <a href="projects.html" class="active">PROYECTOS</a>
+            <a href="engineering.html">INGENIER√çA</a>
+            <a href="management.html">GESTI√ìN DE PROYECTOS</a>
             <a href="contact.html">CONTACTO</a>
         </nav>
         <div class="menu-icon"><i class="fas fa-bars"></i></div>
     </header>
 
-    <div style="padding: 120px 5%;">
+    <div style="padding: 150px 5% 60px; background: var(--bg-light-gray); min-height: 100vh;">
         <div class="section-header">
-            <h2>Proyectos Destacados</h2>
-            <p>Una selecci√≥n de nuestro trabajo reciente.</p>
+            <h2>Experiencia T√©cnica</h2>
+            <p>Selecci√≥n de intervenciones en el sector energ√©tico e industrial.</p>
         </div>
 
         <div class="gallery-grid">
-            <!-- Using generated images as project placeholders -->
+
+            <!-- Project 1 -->
             <div class="gallery-item" onclick="openLightbox(this)">
-                <img src="./assets/images/metallic_structure.png" alt="Nave Industrial Beta">
+                <img src="./assets/images/photovoltaic.png" alt="Direcci√≥n de Obra Planta FV 50MW">
                 <div class="card-content"
-                    style="position:absolute; bottom:0; background:rgba(0,0,0,0.7); width:100%; padding:10px;">
-                    <h4 style="color:white; margin:0;">Nave Industrial Beta</h4>
+                    style="position:absolute; bottom:0; background:rgba(0,0,0,0.8); width:100%; padding:15px;">
+                    <h4 style="color:white; margin-bottom:5px; font-size: 1rem;">Planta FV 50MW - Extremadura</h4>
+                    <p style="color:#ccc; font-size:0.8rem;">Direcci√≥n Facultativa y control de ejecuci√≥n mec√°nica.</p>
                 </div>
             </div>
+
+            <!-- Project 2 -->
             <div class="gallery-item" onclick="openLightbox(this)">
-                <img src="./assets/images/photovoltaic.png" alt="Planta Solar Alfa">
+                <img src="./assets/images/metallic_structure.png" alt="Estructura Nave Log√≠stica">
                 <div class="card-content"
-                    style="position:absolute; bottom:0; background:rgba(0,0,0,0.7); width:100%; padding:10px;">
-                    <h4 style="color:white; margin:0;">Planta Solar Alfa</h4>
+                    style="position:absolute; bottom:0; background:rgba(0,0,0,0.8); width:100%; padding:15px;">
+                    <h4 style="color:white; margin-bottom:5px; font-size: 1rem;">Nave Log√≠stica 12.000m¬≤</h4>
+                    <p style="color:#ccc; font-size:0.8rem;">C√°lculo estructural y asistencia t√©cnica en montaje.</p>
                 </div>
             </div>
+
+            <!-- Project 3 -->
             <div class="gallery-item" onclick="openLightbox(this)">
-                <img src="./assets/images/industrial_design.png" alt="Planta Qu√≠mica 2">
+                <img src="./assets/images/industrial_design.png" alt="Instalaci√≥n T√©rmica Industrial">
                 <div class="card-content"
-                    style="position:absolute; bottom:0; background:rgba(0,0,0,0.7); width:100%; padding:10px;">
-                    <h4 style="color:white; margin:0;">Planta Qu√≠mica 2</h4>
+                    style="position:absolute; bottom:0; background:rgba(0,0,0,0.8); width:100%; padding:15px;">
+                    <h4 style="color:white; margin-bottom:5px; font-size: 1rem;">Adecuaci√≥n Instalaciones Fabriles</h4>
+                    <p style="color:#ccc; font-size:0.8rem;">Proyecto de legalizaci√≥n RITE y contraincendios.</p>
                 </div>
             </div>
+
+            <!-- Project 4 -->
+            <div class="gallery-item" onclick="openLightbox(this)">
+                <img src="./assets/images/project_management.png" alt="Project Management">
+                <div class="card-content"
+                    style="position:absolute; bottom:0; background:rgba(0,0,0,0.8); width:100%; padding:15px;">
+                    <h4 style="color:white; margin-bottom:5px; font-size: 1rem;">Ampliaci√≥n L√≠nea Productiva</h4>
+                    <p style="color:#ccc; font-size:0.8rem;">Gesti√≥n integral del proyecto (EPCM).</p>
+                </div>
+            </div>
+
         </div>
     </div>
 
@@ -64,109 +85,39 @@
     </div>
 
     <footer>
-        <p>&copy; 2025 Antigravity MIK. Todos los derechos reservados.</p>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h4>Contacto</h4>
+                <p><strong>Antigravity MIK</strong></p>
+                <p>Calle Ejemplo 123, Pol√≠gono Industrial<br>28000 Madrid, Espa√±a</p>
+                <p><i class="fas fa-envelope"></i> contacto@consultomik.es</p>
+                <p><i class="fas fa-phone"></i> +34 900 000 000</p>
+            </div>
+            <div class="footer-col">
+                <h4>Enlaces Legales</h4>
+                <a href="#">Pol√≠tica de Privacidad</a>
+                <a href="#">T√©rminos y Condiciones</a>
+                <a href="#">Pol√≠tica de Cookies</a>
+                <a href="contact.html">Trabaja con nosotros</a>
+            </div>
+            <div class="footer-col">
+                <h4>Certificaciones</h4>
+                <p>Comprometidos con la calidad y el medio ambiente.</p>
+                <div style="display: flex; gap: 10px; margin-top: 10px;">
+                    <div
+                        style="background: white; color: #333; padding: 5px 10px; font-weight: bold; font-size: 0.8rem; border-radius: 2px;">
+                        ISO 9001</div>
+                    <div
+                        style="background: white; color: #333; padding: 5px 10px; font-weight: bold; font-size: 0.8rem; border-radius: 2px;">
+                        ISO 14001</div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Antigravity MIK - Ingenier√≠a Nacional. Todos los derechos reservados.</p>
+        </div>
     </footer>
     <script src="script.js"></script>
 </body>
 
-</html><!DOCTYPE html>
-<html lang='es'>
-<head>
-    <meta charset='UTF-8'>
-    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-    <title>Proyectos | Consultomik</title>
-    <meta name='description' content='Proyectos de ingenierÌa industrial, direcciÛn de obra fotovoltaica y c·lculo de estructuras met·licas.'>
-    <link rel='stylesheet' href='style.css'>
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css'>
-</head>
-<body>
-
-    <header>
-        <div class='logo'><i class='fas fa-layer-group'></i> MIK <span>GROUP</span></div>
-        <nav class='nav-links'>
-            <a href='index.html'>INICIO</a>
-            <a href='company.html'>COMPA—ÕA</a>
-            <a href='services.html'>SERVICIOS</a>
-            <a href='projects.html' class='active'>PROYECTOS</a>
-            <a href='contact.html'>CONTACTO</a>
-        </nav>
-        <div class='menu-icon'><i class='fas fa-bars'></i></div>
-    </header>
-
-    <div style='padding: 120px 5%; background: var(--bg-light-gray); min-height: 100vh;'>
-        <div class='section-header'>
-            <h2>Experiencia Reciente</h2>
-            <p>SelecciÛn de intervenciones tÈcnicas en energÌa e industria.</p>
-        </div>
-
-        <div class='gallery-grid'>
-            
-            <!-- Project 1 -->
-            <div class='gallery-item' onclick='openLightbox(this)'>
-                <img src='./assets/images/photovoltaic.png' alt='DirecciÛn de Obra Planta FV 50MW'>
-                <div class='card-content' style='position:absolute; bottom:0; background:rgba(0,0,0,0.8); width:100%; padding:15px;'>
-                    <h4 style='color:white; margin-bottom:5px; font-size: 1rem;'>Planta FV 50MW - Extremadura</h4>
-                    <p style='color:#ccc; font-size:0.8rem;'>DirecciÛn Facultativa y control de ejecuciÛn mec·nica.</p>
-                </div>
-            </div>
-
-            <!-- Project 2 -->
-            <div class='gallery-item' onclick='openLightbox(this)'>
-                <img src='./assets/images/metallic_structure.png' alt='Estructura Nave LogÌstica'>
-                <div class='card-content' style='position:absolute; bottom:0; background:rgba(0,0,0,0.8); width:100%; padding:15px;'>
-                    <h4 style='color:white; margin-bottom:5px; font-size: 1rem;'>Nave LogÌstica 12.000m</h4>
-                    <p style='color:#ccc; font-size:0.8rem;'>C·lculo estructural y asistencia tÈcnica en montaje.</p>
-                </div>
-            </div>
-
-            <!-- Project 3 -->
-            <div class='gallery-item' onclick='openLightbox(this)'>
-                <img src='./assets/images/industrial_design.png' alt='InstalaciÛn TÈrmica Industrial'>
-                <div class='card-content' style='position:absolute; bottom:0; background:rgba(0,0,0,0.8); width:100%; padding:15px;'>
-                    <h4 style='color:white; margin-bottom:5px; font-size: 1rem;'>AdecuaciÛn Instalaciones Fabriles</h4>
-                    <p style='color:#ccc; font-size:0.8rem;'>Proyecto de legalizaciÛn RITE y contraincendios.</p>
-                </div>
-            </div>
-
-            <!-- Project 4 -->
-            <div class='gallery-item' onclick='openLightbox(this)'>
-                <img src='./assets/images/project_management.png' alt='Project Management'>
-                <div class='card-content' style='position:absolute; bottom:0; background:rgba(0,0,0,0.8); width:100%; padding:15px;'>
-                    <h4 style='color:white; margin-bottom:5px; font-size: 1rem;'>AmpliaciÛn LÌnea Productiva</h4>
-                    <p style='color:#ccc; font-size:0.8rem;'>GestiÛn integral del proyecto (EPCM).</p>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-    <!-- Lightbox Modal -->
-    <div class='lightbox-modal' id='lightboxModal'>
-        <div class='lightbox-content'>
-            <img id='lightboxImg' class='lightbox-img' src='' alt='Zoom'>
-            <div id='lightboxCaption' class='lightbox-caption'></div>
-        </div>
-    </div>
-
-    <footer>
-        <div class='footer-content'>
-            <div class='footer-col'>
-                <h4>Contacto</h4>
-                <p><strong>Antigravity MIK</strong></p>
-                <p>IngenierÌa y ConsultorÌa TÈcnica</p>
-                <p><i class='fas fa-envelope'></i> contacto@consultomik.es</p>
-            </div>
-            <div class='footer-col'>
-                <h4>Servicios</h4>
-                <a href='services.html'>Estructuras</a>
-                <a href='services.html'>EnergÌas Renovables</a>
-                <a href='services.html'>ConsultorÌa TÈcnica</a>
-            </div>
-            <div class='footer-col'>
-                <p>&copy; 2025 Consultomik.</p>
-            </div>
-        </div>
-    </footer>
-    <script src='script.js'></script>
-</body>
 </html>
