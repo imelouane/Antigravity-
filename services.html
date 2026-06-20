@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Servicios Técnicos Industriales | Consultomik - MIK GROUP</title>
+    <title>Servicios de Ingeniería e Industrial | Consultomik</title>
     <meta name="description"
-        content="MIK GROUP: Ingeniería industrial, gestión de proyectos, estructuras metálicas y energía fotovoltaica. Soluciones técnicas B2B con control de plazos y normativa.">
+        content="Explore los servicios de ingeniería de Consultomik (MIK GROUP): consultoría técnica, gestión integrada de proyectos (Project Management), outsourcing técnico y dirección facultativa.">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
@@ -21,9 +21,36 @@
         </div>
         <nav class="nav-links">
             <a href="index.html" data-i18n="nav_home">INICIO</a>
-            <a href="services.html" class="active" data-i18n="nav_services">SERVICIOS</a>
-            <a href="engineering.html" data-i18n="nav_engineering">INGENIERÍA</a>
-            <a href="management.html" data-i18n="nav_management">GESTIÓN DE PROYECTOS</a>
+            
+            <div class="dropdown">
+                <a href="company.html" class="dropdown-toggle" data-i18n="nav_company">NOSOTROS <i class="fas fa-chevron-down"></i></a>
+                <div class="dropdown-menu">
+                    <a href="company.html" data-i18n="nav_about_us">QUIÉNES SOMOS</a>
+                    <a href="company.html#team" data-i18n="nav_team">EQUIPO Y TALENTO</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <a href="services.html" class="dropdown-toggle active" data-i18n="nav_services">SERVICIOS <i class="fas fa-chevron-down"></i></a>
+                <div class="dropdown-menu">
+                    <a href="consulting.html" data-i18n="nav_serv_consulting">CONSULTORÍA TÉCNICA</a>
+                    <a href="management.html" data-i18n="nav_serv_management">GESTIÓN DE PROYECTOS</a>
+                    <a href="outsourcing.html" data-i18n="nav_serv_outsourcing">OUTSOURCING TÉCNICO</a>
+                    <a href="support.html" data-i18n="nav_serv_support">SOPORTE ESPECIALIZADO</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <a href="sectors.html" class="dropdown-toggle" data-i18n="nav_sectors">SECTORES <i class="fas fa-chevron-down"></i></a>
+                <div class="dropdown-menu">
+                    <a href="sectors.html#pharma" data-i18n="nav_sect_pharma">FARMACÉUTICO</a>
+                    <a href="sectors.html#energy" data-i18n="nav_sect_energy">ENERGÍA</a>
+                    <a href="sectors.html#industry" data-i18n="nav_sect_industry">INDUSTRIA</a>
+                    <a href="sectors.html#construction" data-i18n="nav_sect_construction">CONSTRUCCIÓN & INFRAESTRUCTURA</a>
+                </div>
+            </div>
+
+            <a href="projects.html" data-i18n="nav_projects">PROYECTOS</a>
             <a href="contact.html" data-i18n="nav_contact">CONTACTO</a>
 
             <!-- Language Selector -->
@@ -47,198 +74,119 @@
     <div style="padding-top: 150px; min-height: 100vh; background-color: var(--bg-light-gray);">
         <section class="services-section">
             <div class="section-header reveal">
-                <h2 data-i18n="section_lines_title">Servicios Técnicos Especializados</h2>
-                <p data-i18n="section_lines_desc">Ingeniería de detalle y dirección de obra para el sector industrial y
-                    energético.</p>
+                <h2 data-i18n="section_lines_title">Nuestras Líneas de Servicio B2B</h2>
+                <p data-i18n="section_lines_desc">Garantizamos rigor normativo, control de plazos y movilización de talento técnico bajo demanda.</p>
             </div>
 
             <div class="services-grid">
 
-                <!-- Estructuras -->
-                <div class="service-card reveal" data-category="estructuras" style="transition-delay: 0.1s;">
-                    <div class="card-image-wrapper">
-                        <img src="./assets/images/metallic_structure.png" class="card-img" alt="Estructuras">
+                <!-- 1. Consultoría Técnica -->
+                <div class="service-card reveal" onclick="window.location.href='consulting.html'">
+                    <div class="card-image-wrapper" style="overflow:hidden; height:220px;">
+                        <img src="./assets/images/blueprint.png" class="card-img" alt="Consultoría Técnica" style="width:100%; height:100%; object-fit:cover;">
                     </div>
                     <div class="card-content">
-                        <div class="card-icon"><i class="fas fa-city"></i></div>
-                        <h3 data-i18n="service_structures">Cálculo y Supervisión de Estructuras Metálicas</h3>
-                        <p data-i18n="service_structures_desc">
-                            <strong>Problema:</strong> Errores de diseño o supervisión en estructuras metálicas pueden
-                            comprometer la seguridad y provocar retrasos en el montaje.<br>
-                            <strong>Solución:</strong> Consultomik realiza cálculo estructural, dirección de obra y
-                            control técnico durante todo el proceso, desde diseño hasta supervisión de montaje.<br>
-                            <strong>Beneficio:</strong> Garantía de integridad estructural, cumplimiento normativo y
-                            eficiencia en la ejecución. Roles: dirección de obra, asistencia técnica y coordinación de
-                            fabricación e instalación.
+                        <div class="card-icon"><i class="fas fa-calculator"></i></div>
+                        <h3 data-i18n="serv_consulting_title">Consultoría Técnica</h3>
+                        <p data-i18n="serv_consulting_desc">
+                            <strong>El Problema:</strong> Incertidumbre regulatoria en plantas de procesos o errores de cálculo estructural que comprometen la viabilidad de la licitación.<br>
+                            <strong>Nuestra Solución:</strong> Informes de due diligence, cálculo avanzado en acero y hormigón (Eurocódigos/CTE), e ingeniería de detalle adaptada a licencias de actividad.<br>
+                            <strong>Beneficios B2B:</strong> Reducción de sobrecostes por modificaciones en fase constructiva y mitigación de riesgos regulatorios.
                         </p>
-                        <div class="card-cta">Solicite revisión estructural de su proyecto <i
-                                class="fas fa-arrow-right"></i></div>
+                        <div class="card-cta">VER PÁGINA DE DETALLE <i class="fas fa-arrow-right"></i></div>
                     </div>
                 </div>
 
-                <!-- Fotovoltaica -->
-                <div class="service-card reveal" data-category="fotovoltaica" style="transition-delay: 0.2s;">
-                    <div class="card-image-wrapper">
-                        <img src="./assets/images/photovoltaic.png" class="card-img" alt="Fotovoltaica">
+                <!-- 2. Gestión de Proyectos -->
+                <div class="service-card reveal" onclick="window.location.href='management.html'">
+                    <div class="card-image-wrapper" style="overflow:hidden; height:220px;">
+                        <img src="./assets/images/project_management.png" class="card-img" alt="Gestión de Proyectos" style="width:100%; height:100%; object-fit:cover;">
                     </div>
                     <div class="card-content">
-                        <div class="card-icon"><i class="fas fa-solar-panel"></i></div>
-                        <h3 data-i18n="service_solar">Dirección de Obra y Control Técnico en Plantas Fotovoltaicas</h3>
-                        <p data-i18n="service_solar_desc">
-                            <strong>Problema:</strong> Las plantas solares requieren control riguroso de instalación,
-                            calidad y normativa eléctrica para evitar desviaciones técnicas y bajo rendimiento.<br>
-                            <strong>Solución:</strong> Consultomik dirige obras fotovoltaicas, supervisa calidad,
-                            controla normativa y asegura conformidad técnica y legal en cada fase del proyecto.<br>
-                            <strong>Beneficio:</strong> Optimización del rendimiento, cumplimiento normativo y reducción
-                            de riesgos. Roles: dirección de obra, inspección de instalaciones y coordinación técnica en
-                            proyectos energéticos.
+                        <div class="card-icon"><i class="fas fa-project-diagram"></i></div>
+                        <h3 data-i18n="serv_management_title">Gestión de Proyectos</h3>
+                        <p data-i18n="serv_management_desc">
+                            <strong>El Problema:</strong> Desviación presupuestaria, retrasos en la entrega de subcontratas y falta de control documental en obras complejas EPC.<br>
+                            <strong>Nuestra Solución:</strong> Planificación, seguimiento documental y presupuestario mediante metodologías ágiles y PMI. Interlocución técnica única.<br>
+                            <strong>Beneficios B2B:</strong> Asegurar la entrega en plazo y coste (Capex) del proyecto y control de riesgos de los contratistas.
                         </p>
-                        <div class="card-cta">Solicite dirección técnica de su planta solar <i
-                                class="fas fa-arrow-right"></i></div>
+                        <div class="card-cta">VER PÁGINA DE DETALLE <i class="fas fa-arrow-right"></i></div>
                     </div>
                 </div>
 
-                <!-- Instalaciones -->
-                <div class="service-card reveal" data-category="automatizacion" style="transition-delay: 0.3s;">
-                    <div class="card-image-wrapper">
-                        <img src="./assets/images/automation.png" class="card-img" alt="Instalaciones">
+                <!-- 3. Outsourcing Técnico -->
+                <div class="service-card reveal" onclick="window.location.href='outsourcing.html'">
+                    <div class="card-image-wrapper" style="overflow:hidden; height:220px;">
+                        <img src="./assets/images/industrial_design.png" class="card-img" alt="Outsourcing Técnico" style="width:100%; height:100%; object-fit:cover;">
                     </div>
                     <div class="card-content">
-                        <div class="card-icon"><i class="fas fa-cogs"></i></div>
-                        <h3 data-i18n="service_automation">Ingeniería Industrial y Mecánica Especializada</h3>
-                        <p data-i18n="service_automation_desc">
-                            <strong>Problema:</strong> Los proyectos industriales complejos requieren diseño preciso y
-                            cumplimiento normativo, y la falta de planificación técnica puede generar retrasos y
-                            sobrecostes.<br>
-                            <strong>Solución:</strong> Consultomik realiza cálculo y redacción de proyectos
-                            industriales, asegurando viabilidad técnica, seguridad en obra y coordinación con todos los
-                            agentes involucrados.<br>
-                            <strong>Beneficio:</strong> Reducción de riesgos, optimización de costes y cumplimiento
-                            estricto de normativas industriales. Experiencia en dirección de obra, revisión de planos y
-                            coordinación de equipos multidisciplinares.
+                        <div class="card-icon"><i class="fas fa-users-cog"></i></div>
+                        <h3 data-i18n="serv_outsourcing_title">Outsourcing / Cesión de Talento</h3>
+                        <p data-i18n="serv_outsourcing_desc">
+                            <strong>El Problema:</strong> Escasez crítica de ingenieros de diseño, supervisores eléctricos y coordinadores HSE disponibles para movilización inmediata.<br>
+                            <strong>Nuestra Solución:</strong> Dotación flexible y cesión de profesionales de alta cualificación para integrarse directamente en sus equipos de diseño o campo.<br>
+                            <strong>Beneficios B2B:</strong> Flexibilidad operativa para picos de trabajo y eliminación de la carga de selección y contratación directa.
                         </p>
-                        <div class="card-cta">Solicite estudio técnico de su instalación <i
-                                class="fas fa-arrow-right"></i></div>
+                        <div class="card-cta">VER PÁGINA DE DETALLE <i class="fas fa-arrow-right"></i></div>
                     </div>
                 </div>
 
-                <!-- Management -->
-                <div class="service-card reveal" data-category="gestion" style="transition-delay: 0.4s;">
-                    <div class="card-image-wrapper">
-                        <img src="./assets/images/project_management.png" class="card-img" alt="Gestión">
+                <!-- 4. Soporte Especializado -->
+                <div class="service-card reveal" onclick="window.location.href='support.html'">
+                    <div class="card-image-wrapper" style="overflow:hidden; height:220px;">
+                        <img src="./assets/images/automation.png" class="card-img" alt="Soporte Especializado" style="width:100%; height:100%; object-fit:cover;">
                     </div>
                     <div class="card-content">
-                        <div class="card-icon"><i class="fas fa-tasks"></i></div>
-                        <h3 data-i18n="service_management">Gestión Integral de Proyectos Industriales y Energéticos</h3>
-                        <p data-i18n="service_management_desc">
-                            <strong>Problema:</strong> La falta de coordinación y seguimiento en proyectos industriales
-                            genera retrasos, sobrecostes y problemas de seguridad.<br>
-                            <strong>Solución:</strong> Consultomik planifica, supervisa y controla cada fase del
-                            proyecto, gestionando equipos, contratistas y proveedores, asegurando cumplimiento normativo
-                            y objetivos de tiempo y coste.<br>
-                            <strong>Beneficio:</strong> Entrega de proyectos dentro de plazo, coste y normativa
-                            establecidos. Roles desempeñados incluyen jefatura de obra, asistencia técnica y
-                            coordinación de ejecución.
+                        <div class="card-icon"><i class="fas fa-shield-halved"></i></div>
+                        <h3 data-i18n="serv_support_title">Soporte Técnico Especializado</h3>
+                        <p data-i18n="serv_support_desc">
+                            <strong>El Problema:</strong> Falta de control técnico (QA/QC) en montajes industriales en campo o falta de dirección facultativa habilitada.<br>
+                            <strong>Nuestra Solución:</strong> Dirección de obra e ingeniería de la propiedad (Owner's Engineering) en plantas energéticas y de procesos, inspecciones HSE y comisionado.<br>
+                            <strong>Beneficios B2B:</strong> Minimización de fallos de montaje, cumplimiento de normativas de seguridad y puesta en marcha eficiente.
                         </p>
-                        <div class="card-cta">Solicite planificación y control de su proyecto <i
-                                class="fas fa-arrow-right"></i></div>
+                        <div class="card-cta">VER PÁGINA DE DETALLE <i class="fas fa-arrow-right"></i></div>
                     </div>
                 </div>
 
-                <!-- Consultoría -->
-                <div class="service-card reveal" data-category="diseno" style="transition-delay: 0.5s;">
-                    <div class="card-image-wrapper">
-                        <img src="./assets/images/blueprint.png" class="card-img" alt="Diseño">
-                    </div>
-                    <div class="card-content">
-                        <div class="card-icon"><i class="fas fa-drafting-compass"></i></div>
-                        <h3 data-i18n="service_engineering">Asistencia Técnica y Consultoría Normativa</h3>
-                        <p data-i18n="service_engineering_desc">
-                            <strong>Problema:</strong> Incertidumbre técnica en la compra o venta de activos
-                            industriales.<br>
-                            <strong>Solución:</strong> Due Diligence técnica, auditorías de estado y peritajes
-                            judiciales.<br>
-                            <strong>Beneficio:</strong> Seguridad jurídica y técnica en sus inversiones.
-                        </p>
-                        <div class="card-cta">Contactar <i class="fas fa-arrow-right"></i></div>
-                    </div>
-                </div>
             </div>
         </section>
     </div>
 
-    <!-- Calls to Action Widgets & Modals -->
-    <!-- (Retaining existing widgets structure) -->
-
-    <!-- Gallery Modal -->
-    <div class="modal" id="galleryModal">
-        <div class="close-btn" onclick="closeModal()">&times;</div>
-        <div class="modal-content">
-            <div class="modal-header">
-                <h2 id="modalTitle">Título</h2>
-            </div>
-            <div class="gallery-grid" id="galleryGrid"></div>
-        </div>
-    </div>
-
-    <!-- Lightbox Modal -->
-    <div class="lightbox-modal" id="lightboxModal">
-        <div class="lightbox-content">
-            <img id="lightboxImg" class="lightbox-img" src="" alt="Zoom">
-            <div id="lightboxCaption" class="lightbox-caption"></div>
-        </div>
-    </div>
-
-    <!-- Call Widget -->
-    <div class="call-me-toggle" id="callMeToggle"><i class="fas fa-phone-alt"></i></div>
-    <div class="call-me-widget" id="callMeWidget">
-        <div class="widget-header">
-            <h4 data-i18n="widget_title">¿Le llamamos ahora?</h4>
-            <div class="close-widget" id="closeWidget">&times;</div>
-        </div>
-        <p style="font-size:0.85rem; margin-bottom:15px; color:#666;" data-i18n="widget_desc">Déjenos su teléfono y un
-            experto le contactará en breve.</p>
-        <form class="call-form" action="https://formsubmit.co/mohamed.imelouane@gmail.com" method="POST">
-            <input type="hidden" name="_subject" value="Solicitud de Llamada (Servicios)">
-            <input type="hidden" name="_next" value="https://consultomic.es/services.html?call_requested=true">
-            <input type="tel" name="phone" placeholder="Su teléfono..." required>
-            <button type="submit" data-i18n="widget_btn">SOLICITAR LLAMADA</button>
-        </form>
-    </div>
-
+    <!-- Footer -->
     <footer>
-        <div class="footer-content">
+        <div class="footer-content" style="text-align: left;">
             <div class="footer-col">
-                <h4>Contacto</h4>
-                <p><strong>Antigravity MIK</strong></p>
+                <h4>Contacto B2B</h4>
+                <p><strong>Consultomik - MIK GROUP</strong></p>
                 <p>Calle Ejemplo 123, Polígono Industrial<br>28000 Madrid, España</p>
                 <p><i class="fas fa-envelope"></i> contacto@consultomik.es</p>
                 <p><i class="fas fa-phone"></i> +34 900 000 000</p>
             </div>
             <div class="footer-col">
-                <h4>Enlaces Legales</h4>
-                <a href="#">Política de Privacidad</a>
-                <a href="#">Términos y Condiciones</a>
-                <a href="#">Política de Cookies</a>
-                <a href="contact.html">Trabaja con nosotros</a>
+                <h4>Servicios e Ingeniería</h4>
+                <a href="consulting.html">Consultoría Técnica</a>
+                <a href="management.html">Gestión de Proyectos</a>
+                <a href="outsourcing.html">Outsourcing / Cesión de Talento</a>
+                <a href="support.html">Soporte Técnico en Obra</a>
             </div>
             <div class="footer-col">
-                <h4>Certificaciones</h4>
-                <p>Comprometidos con la calidad y el medio ambiente.</p>
+                <h4>Certificaciones & Calidad</h4>
+                <p>Soluciones certificadas bajo estándares internacionales.</p>
                 <div style="display: flex; gap: 10px; margin-top: 10px;">
                     <div
-                        style="background: white; color: #333; padding: 5px 10px; font-weight: bold; font-size: 0.8rem; border-radius: 2px;">
+                        style="background: white; color: var(--primary-blue); padding: 5px 10px; font-weight: bold; font-size: 0.8rem; border-radius: 2px;">
                         ISO 9001</div>
                     <div
-                        style="background: white; color: #333; padding: 5px 10px; font-weight: bold; font-size: 0.8rem; border-radius: 2px;">
+                        style="background: white; color: var(--primary-blue); padding: 5px 10px; font-weight: bold; font-size: 0.8rem; border-radius: 2px;">
                         ISO 14001</div>
                 </div>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2025 Antigravity MIK - Ingeniería Nacional. Todos los derechos reservados.</p>
+            <p>&copy; 2026 Consultomik - MIK GROUP. Todos los derechos reservados.</p>
         </div>
     </footer>
+
     <script src="script.js"></script>
 </body>
 

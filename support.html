@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyectos y Casos de Éxito | Consultomik</title>
+    <title>Soporte Técnico y Supervisión en Obra | Consultomik</title>
     <meta name="description"
-        content="Casos de éxito y trayectoria de Consultomik (MIK GROUP) en plantas fotovoltaicas, cálculo de estructuras, comisionado e instalaciones de procesos.">
+        content="Servicios de dirección facultativa de obra, asistencia técnica en campo (Owner's Engineering), coordinación HSE, control de calidad y puesta en marcha.">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
@@ -31,7 +31,7 @@
             </div>
 
             <div class="dropdown">
-                <a href="services.html" class="dropdown-toggle" data-i18n="nav_services">SERVICIOS <i class="fas fa-chevron-down"></i></a>
+                <a href="services.html" class="dropdown-toggle active" data-i18n="nav_services">SERVICIOS <i class="fas fa-chevron-down"></i></a>
                 <div class="dropdown-menu">
                     <a href="consulting.html" data-i18n="nav_serv_consulting">CONSULTORÍA TÉCNICA</a>
                     <a href="management.html" data-i18n="nav_serv_management">GESTIÓN DE PROYECTOS</a>
@@ -50,7 +50,7 @@
                 </div>
             </div>
 
-            <a href="projects.html" class="active" data-i18n="nav_projects">PROYECTOS</a>
+            <a href="projects.html" data-i18n="nav_projects">PROYECTOS</a>
             <a href="contact.html" data-i18n="nav_contact">CONTACTO</a>
 
             <!-- Language Selector -->
@@ -70,65 +70,47 @@
         </div>
     </header>
 
-    <!-- Main Content -->
-    <div style="padding: 150px 5% 60px; background: var(--bg-light-gray); min-height: 100vh;">
-        <div class="section-header reveal">
-            <h2 data-i18n="projects_title">Casos de Éxito y Experiencia Técnica</h2>
-            <p data-i18n="projects_subtitle">Nuestra trayectoria refleja solvencia técnica real y estricto cumplimiento normativo en instalaciones críticas.</p>
-        </div>
-
-        <div class="gallery-grid" style="max-width: 1200px; margin: 0 auto;">
-
-            <!-- Project 1 -->
-            <div class="gallery-item" onclick="openLightbox(this)" style="position: relative;">
-                <img src="./assets/images/photovoltaic.png" alt="Dirección de Obra Planta FV 50MW">
-                <div class="card-content"
-                    style="position:absolute; bottom:0; background:rgba(10,37,64,0.9); width:100%; padding:20px; border-bottom: none; min-height: auto;">
-                    <h4 style="color:white; margin-bottom:5px; font-size: 1.05rem; text-transform: uppercase;">Planta FV 50MW - Extremadura</h4>
-                    <p style="color:#e2e8f0; font-size:0.85rem;">Dirección Facultativa y comisionado eléctrico/mecánico.</p>
-                </div>
-            </div>
-
-            <!-- Project 2 -->
-            <div class="gallery-item" onclick="openLightbox(this)" style="position: relative;">
-                <img src="./assets/images/metallic_structure.png" alt="Estructura Nave Logística">
-                <div class="card-content"
-                    style="position:absolute; bottom:0; background:rgba(10,37,64,0.9); width:100%; padding:20px; border-bottom: none; min-height: auto;">
-                    <h4 style="color:white; margin-bottom:5px; font-size: 1.05rem; text-transform: uppercase;">Nave Logística 12.000m²</h4>
-                    <p style="color:#e2e8f0; font-size:0.85rem;">Cálculo estructural (CTE DB-SE) y asistencia técnica de montaje.</p>
-                </div>
-            </div>
-
-            <!-- Project 3 -->
-            <div class="gallery-item" onclick="openLightbox(this)" style="position: relative;">
-                <img src="./assets/images/industrial_design.png" alt="Instalación Térmica Industrial">
-                <div class="card-content"
-                    style="position:absolute; bottom:0; background:rgba(10,37,64,0.9); width:100%; padding:20px; border-bottom: none; min-height: auto;">
-                    <h4 style="color:white; margin-bottom:5px; font-size: 1.05rem; text-transform: uppercase;">Adecuación Instalación de Procesos</h4>
-                    <p style="color:#e2e8f0; font-size:0.85rem;">Proyecto ejecutivo de legalización de fluidos (RITE/APQ).</p>
-                </div>
-            </div>
-
-            <!-- Project 4 -->
-            <div class="gallery-item" onclick="openLightbox(this)" style="position: relative;">
-                <img src="./assets/images/project_management.png" alt="Project Management">
-                <div class="card-content"
-                    style="position:absolute; bottom:0; background:rgba(10,37,64,0.9); width:100%; padding:20px; border-bottom: none; min-height: auto;">
-                    <h4 style="color:white; margin-bottom:5px; font-size: 1.05rem; text-transform: uppercase;">Ampliación Línea Productiva Pharma</h4>
-                    <p style="color:#e2e8f0; font-size:0.85rem;">Project Management (EPCM) y comisionado bajo estándares GMP.</p>
-                </div>
-            </div>
-
-        </div>
+    <!-- Hero Page -->
+    <div class="page-hero"
+        style="background: var(--primary-blue); padding: 160px 5% 80px; text-align: center; color: white;">
+        <h1 class="reveal" style="color: white; font-size: 2.8rem;">SOPORTE TÉCNICO ESPECIALIZADO</h1>
+        <p class="reveal" style="max-width: 800px; margin: 20px auto 0; font-size: 1.15rem; opacity: 0.9; line-height:1.6;" data-i18n="support_hero_desc">
+            Supervisión facultativa en campo e Ingeniería de la Propiedad. Aseguramos la calidad y la puesta en marcha de sus instalaciones industriales.
+        </p>
     </div>
 
-    <!-- Lightbox Modal -->
-    <div class="lightbox-modal" id="lightboxModal">
-        <div class="lightbox-content">
-            <img id="lightboxImg" class="lightbox-img" src="" alt="Zoom">
-            <div id="lightboxCaption" class="lightbox-caption"></div>
+    <!-- Main Content Section -->
+    <section style="padding: 80px 10%; background: white;">
+        <div class="two-col-grid" style="display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 60px; align-items: start; text-align: left;">
+            <div>
+                <h2 style="margin-bottom: 25px;" data-i18n="support_title1">DIRECCIÓN FACULTATIVA E INGENIERÍA DE LA PROPIEDAD</h2>
+                <p style="color: #4A5568; line-height:1.8; margin-bottom: 25px;" data-i18n="support_p1">
+                    Garantizar que el montaje de estructuras logísticas, subestaciones, líneas de distribución o soportes solares se realice conforme al proyecto ejecutivo y las normativas es una tarea crítica. Nuestro equipo asume las funciones de dirección facultativa y asistencia técnica permanente en terreno.
+                </p>
+                <p style="color: #4A5568; line-height:1.8; margin-bottom: 25px;" data-i18n="support_p2">
+                    Actuamos como los ojos del promotor en la obra, controlando el cumplimiento estricto de los planes de aseguramiento y control de calidad (QA/QC), y supervisando los ensayos de comisionado antes de la energización o puesta en marcha de los procesos.
+                </p>
+
+                <h3 style="margin-top: 40px; margin-bottom: 20px;" data-i18n="support_title2">Coordinación de Seguridad y Salud (HSE)</h3>
+                <p style="color: #4A5568; line-height:1.8; margin-bottom: 25px;" data-i18n="support_p3">
+                    Redactamos planes de seguridad, gestionamos la coordinación de actividades empresariales (CAE) y ejercemos la Coordinación de Seguridad y Salud en fase de obra. Protegemos legal y administrativamente a la promotora, asegurando que todos los subcontratistas cumplan con la legislación HSE.
+                </p>
+            </div>
+            
+            <div style="background: #f7fafc; padding: 40px; border-radius: 4px; border-top: 3px solid var(--accent-orange); box-shadow: 0 4px 15px rgba(0,0,0,0.02);">
+                <h4 style="margin-bottom: 20px; font-size:1.15rem;" data-i18n="support_side_title">Servicios en Campo</h4>
+                <ul style="list-style: none; padding: 0; line-height: 1.8;">
+                    <li style="margin-bottom:12px; display:flex; gap:10px;"><i class="fas fa-check" style="color:var(--accent-gold); margin-top:5px;"></i> <span data-i18n="support_discipline1">Dirección de Obra (Civil, Mecánica, Eléctrica)</span></li>
+                    <li style="margin-bottom:12px; display:flex; gap:10px;"><i class="fas fa-check" style="color:var(--accent-gold); margin-top:5px;"></i> <span data-i18n="support_discipline2">Ingeniería de la Propiedad (Owner's Engineering)</span></li>
+                    <li style="margin-bottom:12px; display:flex; gap:10px;"><i class="fas fa-check" style="color:var(--accent-gold); margin-top:5px;"></i> <span data-i18n="support_discipline3">Coordinación de Seguridad y Salud (HSE / CSS)</span></li>
+                    <li style="margin-bottom:12px; display:flex; gap:10px;"><i class="fas fa-check" style="color:var(--accent-gold); margin-top:5px;"></i> <span data-i18n="support_discipline4">Control de Calidad en Obra (Planes e Inspección QA/QC)</span></li>
+                    <li style="margin-bottom:12px; display:flex; gap:10px;"><i class="fas fa-check" style="color:var(--accent-gold); margin-top:5px;"></i> <span data-i18n="support_discipline5">Supervisión de Pre-comisionado y Puesta en Marcha</span></li>
+                </ul>
+                
+                <a href="contact.html" class="cta-button primary" style="display: block; text-align: center; margin-top: 30px;" data-i18n="support_side_btn">Solicitar Asistencia Técnica</a>
+            </div>
         </div>
-    </div>
+    </section>
 
     <!-- Footer -->
     <footer>

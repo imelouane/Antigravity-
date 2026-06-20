@@ -4,72 +4,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Compañía | Antigravity MIK</title>
+    <title>Nosotros y Equipo Directivo | Consultomik</title>
+    <meta name="description"
+        content="Conozca a Consultomik (MIK GROUP), una consultora de ingeniería técnica especializada en optimización industrial y outsourcing de talento técnico cualificado.">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
 <body>
 
+    <!-- Header -->
     <header>
         <div class="logo">
             <i class="fas fa-layer-group"></i>
             MIK <span>GROUP</span>
         </div>
         <nav class="nav-links">
-            <a href="index.html">INICIO</a>
-            <a href="company.html" class="active">COMPAÑÍA</a>
-            <a href="services.html">SERVICIOS</a>
-            <a href="projects.html">PROYECTOS</a>
-            <a href="contact.html">CONTACTO</a>
+            <a href="index.html" data-i18n="nav_home">INICIO</a>
+            
+            <div class="dropdown">
+                <a href="company.html" class="dropdown-toggle active" data-i18n="nav_company">NOSOTROS <i class="fas fa-chevron-down"></i></a>
+                <div class="dropdown-menu">
+                    <a href="company.html" data-i18n="nav_about_us">QUIÉNES SOMOS</a>
+                    <a href="company.html#team" data-i18n="nav_team">EQUIPO Y TALENTO</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <a href="services.html" class="dropdown-toggle" data-i18n="nav_services">SERVICIOS <i class="fas fa-chevron-down"></i></a>
+                <div class="dropdown-menu">
+                    <a href="consulting.html" data-i18n="nav_serv_consulting">CONSULTORÍA TÉCNICA</a>
+                    <a href="management.html" data-i18n="nav_serv_management">GESTIÓN DE PROYECTOS</a>
+                    <a href="outsourcing.html" data-i18n="nav_serv_outsourcing">OUTSOURCING TÉCNICO</a>
+                    <a href="support.html" data-i18n="nav_serv_support">SOPORTE ESPECIALIZADO</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <a href="sectors.html" class="dropdown-toggle" data-i18n="nav_sectors">SECTORES <i class="fas fa-chevron-down"></i></a>
+                <div class="dropdown-menu">
+                    <a href="sectors.html#pharma" data-i18n="nav_sect_pharma">FARMACÉUTICO</a>
+                    <a href="sectors.html#energy" data-i18n="nav_sect_energy">ENERGÍA</a>
+                    <a href="sectors.html#industry" data-i18n="nav_sect_industry">INDUSTRIA</a>
+                    <a href="sectors.html#construction" data-i18n="nav_sect_construction">CONSTRUCCIÓN & INFRAESTRUCTURA</a>
+                </div>
+            </div>
+
+            <a href="projects.html" data-i18n="nav_projects">PROYECTOS</a>
+            <a href="contact.html" data-i18n="nav_contact">CONTACTO</a>
+
+            <!-- Language Selector -->
+            <div class="lang-selector">
+                <div class="lang-btn">
+                    <i class="fas fa-globe"></i> <span>ES</span> <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="lang-dropdown">
+                    <div class="lang-option" data-lang="es">Español</div>
+                    <div class="lang-option" data-lang="en">English</div>
+                    <div class="lang-option" data-lang="fr">Français</div>
+                </div>
+            </div>
         </nav>
-        <div class="menu-icon"><i class="fas fa-bars"></i></div>
+        <div class="menu-icon">
+            <i class="fas fa-bars"></i>
+        </div>
     </header>
 
     <!-- Hero Page -->
     <div class="page-hero"
-        style="background: var(--primary-blue); padding: 150px 5% 80px; text-align: center; color: white;">
-        <h1 class="reveal">LIDERAZGO TÉCNICO Y COMPROMISO</h1>
-        <p class="reveal" style="max-width: 700px; margin: 20px auto 0; font-size: 1.1rem; opacity: 0.9;">
-            Consultoría e ingeniería multidisciplinar orientada a la excelencia y la sostenibilidad industrial.
+        style="background: var(--primary-blue); padding: 160px 5% 80px; text-align: center; color: white;">
+        <h1 class="reveal" style="color: white; font-size: 2.8rem;">SOBRE NOSOTROS & TALENTO</h1>
+        <p class="reveal" style="max-width: 800px; margin: 20px auto 0; font-size: 1.15rem; opacity: 0.9; line-height:1.6;" data-i18n="company_hero_desc">
+            Socio estratégico en ingeniería de diseño, dirección de obra y cesión de profesionales altamente cualificados para los sectores industriales más exigentes.
         </p>
     </div>
 
     <!-- Who We Are Section -->
-    <section class="section-container" style="padding: 80px 10%;">
+    <section class="section-container" style="padding: 80px 10%; background:white;">
         <div class="two-col-grid"
             style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 60px; align-items: start;">
-            <div class="content-col reveal">
-                <h2 style="margin-bottom: 25px;">Quiénes Somos</h2>
-                <p style="margin-bottom: 20px; text-align: justify; color: #555; line-height: 1.8;">
-                    Consultomik es una consultora técnica especializada en ingeniería aplicada a sectores industriales y
-                    de servicios. Nuestra misión es aportar soluciones que mejoren la productividad, seguridad y
-                    sostenibilidad de tus operaciones.
+            <div class="content-col reveal" style="text-align: left;">
+                <h2 style="margin-bottom: 25px; font-size:2rem;" data-i18n="company_who_title">QUIÉNES SOMOS</h2>
+                <p style="margin-bottom: 20px; text-align: justify; color: #4A5568; line-height: 1.8;" data-i18n="company_who_desc1">
+                    Consultomik (MIK GROUP) es una consultora técnica dedicada al soporte industrial, cálculo de estructuras, dirección de obra e integración de talento profesional. Nuestra misión es dotar de solvencia técnica y agilidad operativa a las constructoras, promotores y plantas de procesos que afrontan desafíos de ingeniería compleja o escasez de recursos técnicos.
                 </p>
-                <p style="text-align: justify; color: #555; line-height: 1.8;">
-                    Combinamos experiencia técnica con enfoque orientado a resultados, trabajando codo a codo con
-                    nuestros clientes para convertir retos en éxitos.
+                <p style="text-align: justify; color: #4A5568; line-height: 1.8; margin-bottom: 20px;" data-i18n="company_who_desc2">
+                    Alineados con el Código Técnico (CTE), Eurocódigos y certificaciones internacionales de calidad, cubrimos todo el ciclo técnico: desde la ingeniería conceptual hasta el comisionado final, operando tanto a nivel nacional como de soporte en consorcios internacionales.
                 </p>
 
                 <div class="methodology-box"
-                    style="margin-top: 40px; background: #f9f9f9; padding: 30px; border-left: 4px solid var(--accent-orange);">
-                    <h3 style="margin-bottom: 15px; font-size: 1.2rem;">Nuestra Metodología</h3>
+                    style="margin-top: 40px; background: #f7fafc; padding: 30px; border-left: 4px solid var(--accent-orange); border-radius: 4px;">
+                    <h3 style="margin-bottom: 15px; font-size: 1.25rem;" data-i18n="company_meth_title">Nuestra Metodología de Integración</h3>
                     <ul style="list-style: none; padding: 0;">
-                        <li style="margin-bottom: 15px; display: flex; gap: 10px;">
+                        <li style="margin-bottom: 15px; display: flex; gap: 10px; align-items: flex-start;">
                             <i class="fas fa-search" style="color: var(--primary-blue); margin-top: 5px;"></i>
-                            <span>Diagnóstico técnico detallado.</span>
+                            <span data-i18n="company_meth_item1"><strong>Diagnóstico y Definición de Perfiles:</strong> Evaluamos sus planos, CTE/normativa aplicable y los cuellos de botella de talento.</span>
                         </li>
-                        <li style="margin-bottom: 15px; display: flex; gap: 10px;">
-                            <i class="fas fa-pencil-ruler" style="color: var(--primary-blue); margin-top: 5px;"></i>
-                            <span>Diseño de solución práctica y escalable.</span>
+                        <li style="margin-bottom: 15px; display: flex; gap: 10px; align-items: flex-start;">
+                            <i class="fas fa-drafting-compass" style="color: var(--primary-blue); margin-top: 5px;"></i>
+                            <span data-i18n="company_meth_item2"><strong>Ingeniería & Asignación:</strong> Movilizamos talento técnico cualificado e ingenieros de cálculo BIM bajo la supervisión de nuestros directores.</span>
                         </li>
-                        <li style="margin-bottom: 15px; display: flex; gap: 10px;">
+                        <li style="margin-bottom: 15px; display: flex; gap: 10px; align-items: flex-start;">
                             <i class="fas fa-cogs" style="color: var(--primary-blue); margin-top: 5px;"></i>
-                            <span>Implementación eficiente con métricas de rendimiento.</span>
-                        </li>
-                        <li style="display: flex; gap: 10px;">
-                            <i class="fas fa-headset" style="color: var(--primary-blue); margin-top: 5px;"></i>
-                            <span>Acompañamiento y soporte tras entrega.</span>
+                            <span data-i18n="company_meth_item3"><strong>Ejecución y Dirección HSE/QA:</strong> Supervisamos la dirección facultativa en campo y aseguramos el control de plazos (PMI).</span>
                         </li>
                     </ul>
                 </div>
@@ -79,101 +116,94 @@
                     style="width: 100%; border-radius: 4px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); margin-bottom: 30px;">
                 <!-- CTAs for Company Page -->
                 <div style="display: flex; flex-direction: column; gap: 15px;">
-                    <a href="contact.html" class="cta-button primary" style="text-align: center;">Agenda una
-                        consultoría</a>
+                    <a href="contact.html" class="cta-button primary" style="text-align: center;">Solicitar Evaluación de Recursos</a>
                     <a href="services.html" class="cta-button secondary"
-                        style="text-align: center; border-color: var(--primary-blue); color: var(--primary-blue);">Descarga
-                        nuestro folleto</a>
+                        style="text-align: center; border-color: var(--primary-blue); color: var(--primary-blue);">Descargar Dossier de Servicios (PDF)</a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Team Section -->
-    <section class="team-section" style="padding: 80px 10%;">
+    <section class="team-section" id="team" style="padding: 80px 10%; background: #f7fafc;">
         <div class="section-header" style="text-align: center; margin-bottom: 50px;">
-            <h2>Nuestro Equipo Directivo</h2>
-            <p>Expertos liderando el cambio.</p>
+            <h2 data-i18n="team_section_title">NUESTRO EQUIPO DIRECTIVO</h2>
+            <p data-i18n="team_section_subtitle">Profesionales de amplia trayectoria industrial dirigiendo el éxito de sus operaciones.</p>
         </div>
         <div class="team-grid"
-            style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px; text-align: center;">
+            style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; text-align: center; max-width: 1200px; margin: 0 auto;">
 
             <!-- Team Member 1 -->
-            <div class="team-member">
+            <div class="team-member" style="background: white; padding: 30px; border-radius: 4px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border-bottom: 3px solid var(--primary-blue);">
                 <div class="member-img"
-                    style="width: 150px; height: 150px; background: #ddd; border-radius: 50%; margin: 0 auto 20px; overflow: hidden;">
-                    <!-- Placeholder or real image if available -->
-                    <img src="./assets/images/automation.png"
-                        style="width:100%; height:100%; object-fit:cover; opacity:0.5;">
+                    style="width: 130px; height: 130px; background: #e2e8f0; border-radius: 50%; margin: 0 auto 20px; overflow: hidden; display: flex; align-items: center; justify-content: center;">
+                    <i class="fas fa-user-tie" style="font-size: 4rem; color: #cbd5e1;"></i>
                 </div>
-                <h4 style="color: var(--primary-blue); margin-bottom: 5px;">Ing. Juan Pérez</h4>
-                <p style="font-size: 0.9rem; color: #888; font-weight: 600;">Director General</p>
-                <p style="font-size: 0.85rem; color: #666; margin-top: 10px;">20+ años en gestión de proyectos
-                    industriales.</p>
+                <h4 style="color: var(--primary-blue); margin-bottom: 5px; font-size:1.15rem;">Ing. Juan Pérez</h4>
+                <p style="font-size: 0.9rem; color: var(--accent-orange); font-weight: 600; text-transform:uppercase; letter-spacing:0.5px;" data-i18n="team_role1">Director General</p>
+                <p style="font-size: 0.85rem; color: #4A5568; margin-top: 15px;" data-i18n="team_desc1">Más de 20 años de experiencia internacional dirigiendo proyectos industriales y de infraestructura energética.</p>
             </div>
 
             <!-- Team Member 2 -->
-            <div class="team-member">
+            <div class="team-member" style="background: white; padding: 30px; border-radius: 4px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border-bottom: 3px solid var(--primary-blue);">
                 <div class="member-img"
-                    style="width: 150px; height: 150px; background: #ddd; border-radius: 50%; margin: 0 auto 20px; overflow: hidden;">
-                    <img src="./assets/images/blueprint.png"
-                        style="width:100%; height:100%; object-fit:cover; opacity:0.5;">
+                    style="width: 130px; height: 130px; background: #e2e8f0; border-radius: 50%; margin: 0 auto 20px; overflow: hidden; display: flex; align-items: center; justify-content: center;">
+                    <i class="fas fa-user-tie" style="font-size: 4rem; color: #cbd5e1;"></i>
                 </div>
-                <h4 style="color: var(--primary-blue); margin-bottom: 5px;">Arq. María López</h4>
-                <p style="font-size: 0.9rem; color: #888; font-weight: 600;">Directora de Proyectos</p>
-                <p style="font-size: 0.85rem; color: #666; margin-top: 10px;">Especialista en diseño sostenible y
-                    eficiencia.</p>
+                <h4 style="color: var(--primary-blue); margin-bottom: 5px; font-size:1.15rem;">Dra. María López</h4>
+                <p style="font-size: 0.9rem; color: var(--accent-orange); font-weight: 600; text-transform:uppercase; letter-spacing:0.5px;" data-i18n="team_role2">Directora de Operaciones</p>
+                <p style="font-size: 0.85rem; color: #4A5568; margin-top: 15px;" data-i18n="team_desc2">Especialista en comisionado farmacéutico (QA/QC), validaciones GMP y dirección de proyectos llave en mano.</p>
             </div>
 
             <!-- Team Member 3 -->
-            <div class="team-member">
+            <div class="team-member" style="background: white; padding: 30px; border-radius: 4px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border-bottom: 3px solid var(--primary-blue);">
                 <div class="member-img"
-                    style="width: 150px; height: 150px; background: #ddd; border-radius: 50%; margin: 0 auto 20px; overflow: hidden;">
-                    <img src="./assets/images/photovoltaic.png"
-                        style="width:100%; height:100%; object-fit:cover; opacity:0.5;">
+                    style="width: 130px; height: 130px; background: #e2e8f0; border-radius: 50%; margin: 0 auto 20px; overflow: hidden; display: flex; align-items: center; justify-content: center;">
+                    <i class="fas fa-user-tie" style="font-size: 4rem; color: #cbd5e1;"></i>
                 </div>
-                <h4 style="color: var(--primary-blue); margin-bottom: 5px;">Ing. Carlos Ruiz</h4>
-                <p style="font-size: 0.9rem; color: #888; font-weight: 600;">Jefe de Ingeniería</p>
-                <p style="font-size: 0.85rem; color: #666; margin-top: 10px;">Experto en cálculo de estructuras y
-                    renovables.</p>
+                <h4 style="color: var(--primary-blue); margin-bottom: 5px; font-size:1.15rem;">Ing. Carlos Ruiz</h4>
+                <p style="font-size: 0.9rem; color: var(--accent-orange); font-weight: 600; text-transform:uppercase; letter-spacing:0.5px;" data-i18n="team_role3">Director de Ingeniería</p>
+                <p style="font-size: 0.85rem; color: #4A5568; margin-top: 15px;" data-i18n="team_desc3">Experto en cálculo avanzado de estructuras (BIM, Eurocódigos) y dirección de obra de plantas de energías renovables.</p>
             </div>
 
         </div>
     </section>
 
+    <!-- Footer -->
     <footer>
-        <div class="footer-content">
+        <div class="footer-content" style="text-align: left;">
             <div class="footer-col">
-                <h4>Contacto</h4>
-                <p><strong>Antigravity MIK</strong></p>
+                <h4>Contacto B2B</h4>
+                <p><strong>Consultomik - MIK GROUP</strong></p>
                 <p>Calle Ejemplo 123, Polígono Industrial<br>28000 Madrid, España</p>
                 <p><i class="fas fa-envelope"></i> contacto@consultomik.es</p>
                 <p><i class="fas fa-phone"></i> +34 900 000 000</p>
             </div>
             <div class="footer-col">
-                <h4>Enlaces Legales</h4>
-                <a href="#">Política de Privacidad</a>
-                <a href="#">Términos y Condiciones</a>
-                <a href="#">Política de Cookies</a>
-                <a href="contact.html">Trabaja con nosotros</a>
+                <h4>Servicios e Ingeniería</h4>
+                <a href="consulting.html">Consultoría Técnica</a>
+                <a href="management.html">Gestión de Proyectos</a>
+                <a href="outsourcing.html">Outsourcing / Cesión de Talento</a>
+                <a href="support.html">Soporte Técnico en Obra</a>
             </div>
             <div class="footer-col">
-                <h4>Certificaciones</h4>
-                <p>Comprometidos con la calidad y el medio ambiente.</p>
+                <h4>Certificaciones & Calidad</h4>
+                <p>Soluciones certificadas bajo estándares internacionales.</p>
                 <div style="display: flex; gap: 10px; margin-top: 10px;">
                     <div
-                        style="background: white; color: #333; padding: 5px 10px; font-weight: bold; font-size: 0.8rem; border-radius: 2px;">
+                        style="background: white; color: var(--primary-blue); padding: 5px 10px; font-weight: bold; font-size: 0.8rem; border-radius: 2px;">
                         ISO 9001</div>
                     <div
-                        style="background: white; color: #333; padding: 5px 10px; font-weight: bold; font-size: 0.8rem; border-radius: 2px;">
+                        style="background: white; color: var(--primary-blue); padding: 5px 10px; font-weight: bold; font-size: 0.8rem; border-radius: 2px;">
                         ISO 14001</div>
                 </div>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2025 Antigravity MIK - Ingeniería Nacional. Todos los derechos reservados.</p>
+            <p>&copy; 2026 Consultomik - MIK GROUP. Todos los derechos reservados.</p>
         </div>
     </footer>
+
     <script src="script.js"></script>
 </body>
 

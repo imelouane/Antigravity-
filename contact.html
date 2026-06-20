@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto y Presupuestos | Consultomik - MIK GROUP</title>
+    <title>Contacto y Solicitud de Propuestas B2B | Consultomik</title>
+    <meta name="description"
+        content="Contacte con la oficina técnica de Consultomik (MIK GROUP). Solicite propuestas de cálculo de estructuras, dirección de obra o outsourcing de profesionales.">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <meta name="description"
-        content="Contacte con MIK GROUP para asistencia técnica industrial, dirección de obra y control técnico de proyectos energéticos.">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
@@ -22,9 +22,36 @@
         </div>
         <nav class="nav-links">
             <a href="index.html" data-i18n="nav_home">INICIO</a>
-            <a href="services.html" data-i18n="nav_services">SERVICIOS</a>
-            <a href="engineering.html" data-i18n="nav_engineering">INGENIERÍA</a>
-            <a href="management.html" data-i18n="nav_management">GESTIÓN DE PROYECTOS</a>
+            
+            <div class="dropdown">
+                <a href="company.html" class="dropdown-toggle" data-i18n="nav_company">NOSOTROS <i class="fas fa-chevron-down"></i></a>
+                <div class="dropdown-menu">
+                    <a href="company.html" data-i18n="nav_about_us">QUIÉNES SOMOS</a>
+                    <a href="company.html#team" data-i18n="nav_team">EQUIPO Y TALENTO</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <a href="services.html" class="dropdown-toggle" data-i18n="nav_services">SERVICIOS <i class="fas fa-chevron-down"></i></a>
+                <div class="dropdown-menu">
+                    <a href="consulting.html" data-i18n="nav_serv_consulting">CONSULTORÍA TÉCNICA</a>
+                    <a href="management.html" data-i18n="nav_serv_management">GESTIÓN DE PROYECTOS</a>
+                    <a href="outsourcing.html" data-i18n="nav_serv_outsourcing">OUTSOURCING TÉCNICO</a>
+                    <a href="support.html" data-i18n="nav_serv_support">SOPORTE ESPECIALIZADO</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <a href="sectors.html" class="dropdown-toggle" data-i18n="nav_sectors">SECTORES <i class="fas fa-chevron-down"></i></a>
+                <div class="dropdown-menu">
+                    <a href="sectors.html#pharma" data-i18n="nav_sect_pharma">FARMACÉUTICO</a>
+                    <a href="sectors.html#energy" data-i18n="nav_sect_energy">ENERGÍA</a>
+                    <a href="sectors.html#industry" data-i18n="nav_sect_industry">INDUSTRIA</a>
+                    <a href="sectors.html#construction" data-i18n="nav_sect_construction">CONSTRUCCIÓN & INFRAESTRUCTURA</a>
+                </div>
+            </div>
+
+            <a href="projects.html" data-i18n="nav_projects">PROYECTOS</a>
             <a href="contact.html" class="active" data-i18n="nav_contact">CONTACTO</a>
 
             <!-- Language Selector -->
@@ -45,88 +72,107 @@
     </header>
 
     <!-- Main Content -->
-    <div style="padding-top: 150px; min-height: 100vh; background: #fff;">
+    <div style="padding-top: 150px; min-height: 100vh; background: var(--bg-light-gray); padding-bottom: 60px;">
         <div class="contact-container reveal">
 
-            <div class="section-header">
-                <h2 class="reveal">Hablemos de su Proyecto</h2>
-                <p class="reveal">Estamos listos para aportar valor a su próxima obra industrial en cualquier punto del
-                    <strong>Territorio Nacional</strong>.
-                </p>
+            <div class="section-header" style="text-align: center; margin-bottom: 40px;">
+                <h2 data-i18n="contact_title">Hablemos de su Próximo Hito</h2>
+                <p data-i18n="contact_subtitle">Nuestra oficina técnica está lista para evaluar sus requerimientos e integrarse en sus operaciones.</p>
             </div>
 
             <!-- Contact Form -->
             <form class="reveal" action="https://formsubmit.co/mohamed.imelouane@gmail.com" method="POST"
-                enctype="multipart/form-data">
+                enctype="multipart/form-data" style="text-align: left;">
 
-                <input type="hidden" name="_subject" value="Nuevo Mensaje de Web MIK Group">
-                <input type="hidden" name="_next" value="https://consultomic.es/contact.html?success=true">
+                <input type="hidden" name="_subject" value="Nuevo Mensaje B2B de Web Consultomik">
+                <input type="hidden" name="_next" value="https://consultomik.es/contact.html?success=true">
 
-                <div class="form-group">
-                    <label>Nombre Completo</label>
-                    <input type="text" name="name" required placeholder="Ej. Juan Pérez">
+                <div class="form-group" style="margin-bottom: 20px;">
+                    <label style="font-weight: 600; color: var(--primary-blue);" data-i18n="form_name">Nombre Completo</label>
+                    <input type="text" name="name" required placeholder="Ej. Juan Pérez" style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 4px; font-family: var(--font-body);">
                 </div>
 
-                <div class="form-group">
-                    <label>Correo Electrónico</label>
-                    <input type="email" name="email" required placeholder="email@empresa.com">
+                <div class="form-group" style="margin-bottom: 20px;">
+                    <label style="font-weight: 600; color: var(--primary-blue);" data-i18n="form_email">Correo Corporativo</label>
+                    <input type="email" name="email" required placeholder="email@empresa.com" style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 4px; font-family: var(--font-body);">
                 </div>
 
-                <div class="form-group">
-                    <label>Teléfono</label>
-                    <input type="tel" name="phone" placeholder="+34 600 000 000">
+                <div class="form-group" style="margin-bottom: 20px;">
+                    <label style="font-weight: 600; color: var(--primary-blue);" data-i18n="form_company">Empresa / Organización</label>
+                    <input type="text" name="company" placeholder="Nombre de su empresa" style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 4px; font-family: var(--font-body);">
                 </div>
 
-                <div class="form-group">
-                    <label>Tipo de Consulta</label>
-                    <select name="type">
-                        <option value="presupuesto">Solicitar Presupuesto</option>
-                        <option value="info">Información General</option>
-                        <option value="empleo">Trabaja con Nosotros (Recursos Humanos)</option>
+                <div class="form-group" style="margin-bottom: 20px;">
+                    <label style="font-weight: 600; color: var(--primary-blue);" data-i18n="form_service">Línea de Interés</label>
+                    <select name="type" style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 4px; background: white; font-family: var(--font-body);">
+                        <option value="consultoria">Consultoría Técnica e Ingeniería</option>
+                        <option value="gestion">Dirección Integrada de Proyectos (Project Management)</option>
+                        <option value="outsourcing">Outsourcing / Cesión de Profesionales</option>
+                        <option value="soporte">Soporte Técnico Especializado en Campo</option>
+                        <option value="rrhh">Trabaja con Nosotros (Recursos Humanos)</option>
                     </select>
                 </div>
 
-                <div class="form-group">
-                    <label>Mensaje / Detalles del Proyecto</label>
+                <div class="form-group" style="margin-bottom: 20px;">
+                    <label style="font-weight: 600; color: var(--primary-blue);" data-i18n="form_message">Requerimientos del Proyecto</label>
                     <textarea name="message" rows="5" required
-                        placeholder="Describa brevemente sus necesidades..."></textarea>
+                        placeholder="Describa brevemente las necesidades de cálculo estructural, perfiles técnicos necesarios u obra..." style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 4px; font-family: var(--font-body); resize: vertical;"></textarea>
                 </div>
 
                 <!-- Work with us Section -->
-                <div class="form-group">
-                    <label style="margin-top:20px; border-top:1px solid #eee; padding-top:20px;">
-                        <i class="fas fa-briefcase"></i> Trabaja con Nosotros
+                <div class="form-group" style="margin-bottom: 30px;">
+                    <label style="margin-top:20px; border-top:1px solid #eee; padding-top:20px; display: block; font-weight: 600; color: var(--primary-blue);" data-i18n="form_work">
+                        <i class="fas fa-briefcase"></i> Trabaja con Nosotros (Ingenieros / Técnicos)
                     </label>
-                    <p style="font-size:0.9rem; color:#666; margin-bottom:10px;">Buscamos talento en Ingeniería y
-                        Montaje. Adjunta tu CV aquí (PDF).</p>
-                    <div class="file-upload">
-                        <input type="file" name="cv_attachment" accept=".pdf,.doc,.docx">
-                        <p><i class="fas fa-cloud-upload-alt"></i> Click para subir CV</p>
+                    <p style="font-size:0.9rem; color:#666; margin-bottom:15px;" data-i18n="form_work_desc">Buscamos talento técnico para integrar en consorcios industriales. Adjunte su Curriculum Vitae aquí (PDF).</p>
+                    <div class="file-upload" style="border: 2px dashed #ccc; padding: 30px; text-align: center; cursor: pointer; background: #fafafa; border-radius: 4px;">
+                        <input type="file" name="cv_attachment" accept=".pdf,.doc,.docx" style="display: none;" id="cvFile" onchange="document.getElementById('fileName').textContent = this.files[0].name">
+                        <label for="cvFile" style="cursor: pointer; display: block;">
+                            <i class="fas fa-cloud-upload-alt" style="font-size: 2rem; color: var(--accent-gold); margin-bottom: 10px;"></i>
+                            <p id="fileName" data-i18n="form_upload_btn">Haga click para adjuntar archivo (.pdf, .docx)</p>
+                        </label>
                     </div>
                 </div>
 
-                <button type="submit" class="btn-submit">ENVIAR SOLICITUD</button>
+                <button type="submit" class="btn-submit" style="background: var(--primary-blue); color: white; border: none; padding: 15px 30px; border-radius: 4px; cursor: pointer; width: 100%; font-size: 1.1rem; font-weight: 700; transition: background 0.3s;">ENVIAR SOLICITUD DE CONTACTO</button>
             </form>
 
         </div>
     </div>
 
-    <!-- Call Me Widget -->
-    <div class="call-me-toggle" id="callMeToggle"><i class="fas fa-phone-alt"></i></div>
-    <div class="call-me-widget" id="callMeWidget">
-        <div class="widget-header">
-            <h4 data-i18n="widget_title">¿Le llamamos mejor?</h4>
-            <div class="close-widget" id="closeWidget">&times;</div>
-        </div>
-        <form class="call-form" action="https://formsubmit.co/mohamed.imelouane@gmail.com" method="POST">
-            <input type="hidden" name="_subject" value="Solicitud de Llamada (Página Contacto)">
-            <input type="tel" name="phone" placeholder="Su teléfono..." required>
-            <button type="submit" data-i18n="widget_btn">SOLICITAR LLAMADA</button>
-        </form>
-    </div>
-
+    <!-- Footer -->
     <footer>
-        <p data-i18n="footer_copy">&copy; 2025 Antigravity MIK. Todos los derechos reservados.</p>
+        <div class="footer-content" style="text-align: left;">
+            <div class="footer-col">
+                <h4>Contacto B2B</h4>
+                <p><strong>Consultomik - MIK GROUP</strong></p>
+                <p>Calle Ejemplo 123, Polígono Industrial<br>28000 Madrid, España</p>
+                <p><i class="fas fa-envelope"></i> contacto@consultomik.es</p>
+                <p><i class="fas fa-phone"></i> +34 900 000 000</p>
+            </div>
+            <div class="footer-col">
+                <h4>Servicios e Ingeniería</h4>
+                <a href="consulting.html">Consultoría Técnica</a>
+                <a href="management.html">Gestión de Proyectos</a>
+                <a href="outsourcing.html">Outsourcing / Cesión de Talento</a>
+                <a href="support.html">Soporte Técnico en Obra</a>
+            </div>
+            <div class="footer-col">
+                <h4>Certificaciones & Calidad</h4>
+                <p>Soluciones certificadas bajo estándares internacionales.</p>
+                <div style="display: flex; gap: 10px; margin-top: 10px;">
+                    <div
+                        style="background: white; color: var(--primary-blue); padding: 5px 10px; font-weight: bold; font-size: 0.8rem; border-radius: 2px;">
+                        ISO 9001</div>
+                    <div
+                        style="background: white; color: var(--primary-blue); padding: 5px 10px; font-weight: bold; font-size: 0.8rem; border-radius: 2px;">
+                        ISO 14001</div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Consultomik - MIK GROUP. Todos los derechos reservados.</p>
+        </div>
     </footer>
 
     <script src="script.js"></script>
