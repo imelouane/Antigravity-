@@ -4,18 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Socio en Ingeniería, Gestión y Outsourcing Técnico | Consultomik</title>
+    <title>Ingeniería Industrial y Consultoría Técnica | Consultomik</title>
     <meta name="description"
-        content="Consultomik ofrece consultoría técnica, dirección de obra, outsourcing de profesionales cualificados y gestión de proyectos industriales en los sectores farmacéutico, energético y de construcción.">
+        content="Consultomik es una oficina de ingeniería integral especializada en cálculo de estructuras, oficina técnica CAD, outsourcing técnico y cualificación farmacéutica GMP en España.">
     
     <!-- CSS Layout -->
     <link rel="stylesheet" href="style.css">
     
-    <!-- Third-Party Libraries -->
+    <!-- Libraries -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     
-    <!-- Lenis Smooth Scroll CDN -->
+    <!-- Lenis Smooth Scroll -->
     <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
 </head>
 
@@ -24,10 +24,7 @@
     <!-- Header / Navigation -->
     <header>
         <a href="index.html" class="logo-container">
-            <div class="logo-box">
-                <div class="logo-ring"></div>
-                <div class="logo-core"></div>
-            </div>
+            <div class="logo-box"></div>
             <div class="logo-text">
                 <span class="logo-title">Consultomik</span>
                 <span class="logo-subtitle">Advanced Engineering</span>
@@ -48,23 +45,14 @@
             <div class="dropdown">
                 <a href="services.html" class="dropdown-toggle" data-i18n="nav_services">SERVICIOS <i class="fas fa-chevron-down"></i></a>
                 <div class="dropdown-menu">
-                    <a href="consulting.html" data-i18n="nav_serv_consulting">CONSULTORÍA TÉCNICA</a>
-                    <a href="management.html" data-i18n="nav_serv_management">GESTIÓN DE PROYECTOS</a>
-                    <a href="outsourcing.html" data-i18n="nav_serv_outsourcing">OUTSOURCING TÉCNICO</a>
-                    <a href="support.html" data-i18n="nav_serv_support">SOPORTE ESPECIALIZADO</a>
+                    <a href="consulting.html">Ingeniería Integral</a>
+                    <a href="cad.html">Oficina Técnica CAD</a>
+                    <a href="outsourcing.html">Outsourcing de Personal</a>
+                    <a href="support.html">Dirección de Obra & QA/QC</a>
                 </div>
             </div>
 
-            <div class="dropdown">
-                <a href="sectors.html" class="dropdown-toggle" data-i18n="nav_sectors">SECTORES <i class="fas fa-chevron-down"></i></a>
-                <div class="dropdown-menu">
-                    <a href="sectors.html#pharma" data-i18n="nav_sect_pharma">FARMACÉUTICO</a>
-                    <a href="sectors.html#energy" data-i18n="nav_sect_energy">ENERGÍA</a>
-                    <a href="sectors.html#industry" data-i18n="nav_sect_industry">INDUSTRIA</a>
-                    <a href="sectors.html#construction" data-i18n="nav_sect_construction">CONSTRUCCIÓN & INFRAESTRUCTURA</a>
-                </div>
-            </div>
-
+            <a href="sectors.html" data-i18n="nav_sectors">SECTORES</a>
             <a href="projects.html" data-i18n="nav_projects">PROYECTOS</a>
             <a href="contact.html" data-i18n="nav_contact">CONTACTO</a>
 
@@ -87,500 +75,321 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="hero reveal">
-        <!-- Hero Slider Container -->
-        <div class="hero-slider">
-            <!-- Slide 1: Current Video -->
-            <div class="hero-slide active">
-                <video class="hero-video" autoplay loop muted playsinline poster="./assets/images/metallic_structure.png">
-                    <source src="./assets/videos/hero_background.mp4" type="video/mp4">
-                </video>
-            </div>
-            <!-- Slide 2: Image 1 -->
-            <div class="hero-slide" style="background-image: url('./Fotos/portada%20principal/WhatsApp%20Image%202025-12-27%20at%2020.10.59%20(1).jpeg'); opacity: 0.15;"></div>
-            <!-- Slide 3: Image 2 -->
-            <div class="hero-slide" style="background-image: url('./Fotos/portada%20principal/WhatsApp%20Image%202025-12-27%20at%2020.56.04%20(1).jpeg'); opacity: 0.15;"></div>
-            <!-- Slide 4: Image 3 -->
-            <div class="hero-slide" style="background-image: url('./Fotos/portada%20principal/WhatsApp%20Image%202025-12-27%20at%2021.03.15.jpeg'); opacity: 0.15;"></div>
-        </div>
-
-        <div class="hero-overlay"></div>
-        <div class="bg-grid-overlay"></div>
-
-        <div class="hero-content">
-            <span class="section-label">MIK Group · Ingeniería de Vanguardia</span>
-            <h1 class="reveal text-glow-cyan" data-i18n="hero_title">Socio Tecnológico en Ingeniería, Gestión y Outsourcing Técnico</h1>
-            <p class="reveal" data-i18n="hero_desc">Solvencia de alto nivel para los sectores farmacéutico, energético, industrial y de edificación. Facilitamos talento técnico altamente cualificado y dirección de obra bajo demanda.</p>
-            <div class="hero-buttons reveal">
-                <a href="#contacto" class="cta-button primary">Solicitar Propuesta Técnica</a>
-                <a href="services.html" class="cta-button secondary">Explorar Capacidades</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Introduction Section -->
-    <section class="intro-section" style="padding: 100px 8%; background: var(--bg-surface); text-align: center; border-bottom: 1px solid var(--border-color); position: relative;">
-        <div class="bg-grid-overlay"></div>
-        <p style="font-size: clamp(16px, 2vw, 22px); color: var(--text-main); line-height: 1.8; max-width: 950px; margin: 0 auto; position: relative; z-index: 2;" data-i18n="intro_desc">
-            En <strong>Consultomik</strong> aportamos solvencia en diseño técnico, cálculo avanzado y gestión de obra en terreno. Nos integramos con promotores y constructoras internacionales para asegurar que cada proyecto industrial cumpla con el Código Técnico (CTE), Eurocódigos y las normativas sectoriales más exigentes.
-        </p>
-    </section>
-
-    <!-- Value Proposition Section -->
-    <section class="values-section" style="padding: 100px 8%; background: var(--bg-base); text-align: center; border-bottom: 1px solid var(--border-color);">
-        <div class="section-header reveal" style="margin-bottom: 64px;">
-            <span class="section-label" style="margin-bottom: 16px;">Garantías Operativas</span>
-            <h2 data-i18n="values_title" style="font-size: clamp(24px, 3vw, 40px); margin-bottom: 8px;">NUESTRA PROPUESTA DE VALOR</h2>
-            <p data-i18n="values_subtitle" style="font-size: 14px;">Excelencia técnica y alineamiento con objetivos industriales complejos.</p>
-        </div>
-        <div class="services-grid">
-            <div class="service-card" style="text-align: left; height: auto;">
-                <div class="service-card-top">
-                    <span class="service-card-num">01</span>
-                    <div class="service-card-icon"><i class="fas fa-shield-halved"></i></div>
+    <section class="hero">
+        <div class="hero-bg-graphic"></div>
+        <div class="hero-content-wrapper">
+            <!-- Hero Left: Messaging -->
+            <div class="hero-main">
+                <span class="section-label">OFICINA TÉCNICA MULTIDISCIPLINAR</span>
+                <h1 data-i18n="hero_title">Ingeniería Industrial y Consultoría Técnica de Alto Nivel</h1>
+                <p data-i18n="hero_desc">Especialistas en cálculo de estructuras, proyectos ejecutivos de instalaciones, legalizaciones y dirección facultativa. Aportamos rigor regulatorio, modelado BIM y soporte técnico in-situ para grandes industrias.</p>
+                <div class="hero-buttons">
+                    <a href="#contacto" class="cta-button primary" data-i18n="hero_btn_presupuesto">Solicitar presupuesto</a>
+                    <a href="#" class="cta-button secondary trigger-call-modal" data-i18n="hero_btn_llamamos">Te llamamos</a>
                 </div>
-                <h3 data-i18n="val_solvency_title">Solvencia de Gabinete y Campo</h3>
-                <p data-i18n="val_solvency_desc">Combinamos el cálculo estructural y diseño normativo avanzado con dirección facultativa en obra, garantizando que el diseño sea viable constructivamente.</p>
             </div>
-            <div class="service-card" style="text-align: left; height: auto;">
-                <div class="service-card-top">
-                    <span class="service-card-num">02</span>
-                    <div class="service-card-icon"><i class="fas fa-users-gear"></i></div>
-                </div>
-                <h3 data-i18n="val_flexibility_title">Talento Bajo Demanda</h3>
-                <p data-i18n="val_flexibility_desc">Ayudamos a mitigar la escasez de talento técnico en proyectos EPC. Facilitamos ingenieros de campo y supervisores con incorporación inmediata y flexible.</p>
-            </div>
-            <div class="service-card" style="text-align: left; height: auto;">
-                <div class="service-card-top">
-                    <span class="service-card-num">03</span>
-                    <div class="service-card-icon"><i class="fas fa-calculator"></i></div>
-                </div>
-                <h3 data-i18n="val_standard_title">Cumplimiento Normativo Estricto</h3>
-                <p data-i18n="val_standard_desc">Dominamos la normativa técnica nacional e internacional: Eurocódigos estructurales, CTE, reglamentos industriales (RITE, PCI, APQ) y buenas prácticas farmacéuticas (GMP).</p>
+
+            <!-- Hero Right: Call-Back Card -->
+            <div class="hero-form-card">
+                <h3 data-i18n="call_title">Queremos llamarte</h3>
+                <p data-i18n="call_desc" class="text-muted">Indíquenos sus datos y un ingeniero de nuestra oficina técnica le telefoneará en el horario preferido.</p>
+                <form action="https://formsubmit.co/proyectos@consultomik.es" method="POST">
+                    <input type="hidden" name="_subject" value="Nueva Solicitud de Llamada (Te Llamamos - Hero)">
+                    <input type="hidden" name="_next" value="https://consultomik.es/index.html?success=true">
+                    
+                    <div class="form-group">
+                        <label data-i18n="form_name">Nombre y Apellidos *</label>
+                        <input type="text" name="name" required placeholder="Ing. Carlos Ruiz" class="input-field">
+                    </div>
+                    <div class="form-group">
+                        <label data-i18n="form_phone">Teléfono Directo *</label>
+                        <input type="tel" name="phone" required placeholder="+34 600 000 000" class="input-field">
+                    </div>
+                    <div class="form-group">
+                        <label data-i18n="form_company">Empresa / Organización *</label>
+                        <input type="text" name="company" required placeholder="Sacyr Industrial" class="input-field">
+                    </div>
+                    <div class="form-group">
+                        <label data-i18n="form_hours">Horario de Preferencia *</label>
+                        <select name="preferred_time" required class="input-field">
+                            <option value="morning" data-i18n="form_hours_morning">Mañana (09:00 - 14:00)</option>
+                            <option value="afternoon" data-i18n="form_hours_afternoon">Tarde (14:00 - 18:00)</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="cta-button primary" style="width: 100%;" data-i18n="form_btn_call">Llamadme</button>
+                </form>
             </div>
         </div>
     </section>
 
-    <!-- Metrics Section -->
-    <section class="metrics-section reveal">
-        <div class="bg-grid-overlay"></div>
-        <div style="text-align: center; margin-bottom: 64px; position: relative; z-index: 2;">
-            <span class="section-label">Track Record</span>
-            <h2 data-i18n="trust_title" style="font-size: clamp(24px, 3vw, 40px); margin-bottom: 8px;">SOLVENCIA AVALADA</h2>
-            <p data-i18n="trust_subtitle" style="font-size: 14px;">Cifras y estándares de calidad que garantizan el éxito de sus operaciones.</p>
-        </div>
-
-        <div class="metrics-grid" style="position: relative; z-index: 2;">
-            <div class="metric-item">
-                <span class="metric-number" data-count="150">+150</span>
-                <p class="metric-label">Proyectos Ejecutados</p>
-                <p class="metric-desc">Ingeniería básica, cálculo de estructuras y legalizaciones visadas.</p>
+    <!-- Stats Bar -->
+    <section class="stats-bar">
+        <div class="stats-grid">
+            <div class="stat-item">
+                <div class="stat-number" data-count="220">+220</div>
+                <div class="stat-label" data-i18n="stat_proyectos">Proyectos Ejecutados</div>
             </div>
-            <div class="metric-item">
-                <span class="metric-number" data-count="10">+10</span>
-                <p class="metric-label">Años de Trayectoria</p>
-                <p class="metric-desc">Asesorando a las principales promotoras y constructoras del país.</p>
+            <div class="stat-item">
+                <div class="stat-number" data-count="280">+280</div>
+                <div class="stat-label" data-i18n="stat_mw">MWp Instalados</div>
             </div>
-            <div class="metric-item">
-                <span class="metric-number" data-count="100">100%</span>
-                <p class="metric-label">Cumplimiento Normativo</p>
-                <p class="metric-desc">Proyectos aprobados sin incidencias por organismos de control externos.</p>
+            <div class="stat-item">
+                <div class="stat-number" data-count="80">+80</div>
+                <div class="stat-label" data-i18n="stat_clientes">Clientes Industriales</div>
             </div>
-            <div class="metric-item">
-                <span class="metric-number" data-count="280">+280 MW</span>
-                <p class="metric-label">Energía Proyectada</p>
-                <p class="metric-desc">De autoconsumo solar fotovoltaico y parques industriales.</p>
+            <div class="stat-item">
+                <div class="stat-number" data-count="45">45</div>
+                <div class="stat-label" data-i18n="stat_ingenieros">Ingenieros en Plantilla</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" data-count="10">10+</div>
+                <div class="stat-label" data-i18n="stat_experiencia">Años de Trayectoria</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" data-count="12">12</div>
+                <div class="stat-label" data-i18n="stat_internacionales">Proyectos Internacionales</div>
             </div>
         </div>
     </section>
 
-    <!-- Logo Ticker (Infinite Scroll) -->
+    <!-- Logo Ticker -->
     <section class="logo-ticker">
-        <div class="logo-ticker-title">Confianza de Referentes Industriales en España</div>
-        <div class="logo-ticker-wrapper">
-            <div class="logo-ticker-track">
-                <div class="logo-ticker-item">
-                    <div class="logo-ticker-dot"></div>
-                    <span class="logo-ticker-text">REPSOL</span>
-                </div>
-                <div class="logo-ticker-item">
-                    <div class="logo-ticker-dot"></div>
-                    <span class="logo-ticker-text">IBERDROLA</span>
-                </div>
-                <div class="logo-ticker-item">
-                    <div class="logo-ticker-dot"></div>
-                    <span class="logo-ticker-text">NOVARTIS</span>
-                </div>
-                <div class="logo-ticker-item">
-                    <div class="logo-ticker-dot"></div>
-                    <span class="logo-ticker-text">ACS GROUP</span>
-                </div>
-                <div class="logo-ticker-item">
-                    <div class="logo-ticker-dot"></div>
-                    <span class="logo-ticker-text">ACCIONA</span>
-                </div>
-                <div class="logo-ticker-item">
-                    <div class="logo-ticker-dot"></div>
-                    <span class="logo-ticker-text">SACYR</span>
-                </div>
-                <div class="logo-ticker-item">
-                    <div class="logo-ticker-dot"></div>
-                    <span class="logo-ticker-text">FERROVIAL</span>
-                </div>
-                <div class="logo-ticker-item">
-                    <div class="logo-ticker-dot"></div>
-                    <span class="logo-ticker-text">BAYER</span>
-                </div>
-                <!-- Duplicate for seamless looping -->
-                <div class="logo-ticker-item">
-                    <div class="logo-ticker-dot"></div>
-                    <span class="logo-ticker-text">REPSOL</span>
-                </div>
-                <div class="logo-ticker-item">
-                    <div class="logo-ticker-dot"></div>
-                    <span class="logo-ticker-text">IBERDROLA</span>
-                </div>
-                <div class="logo-ticker-item">
-                    <div class="logo-ticker-dot"></div>
-                    <span class="logo-ticker-text">NOVARTIS</span>
-                </div>
-                <div class="logo-ticker-item">
-                    <div class="logo-ticker-dot"></div>
-                    <span class="logo-ticker-text">ACS GROUP</span>
-                </div>
-                <div class="logo-ticker-item">
-                    <div class="logo-ticker-dot"></div>
-                    <span class="logo-ticker-text">ACCIONA</span>
-                </div>
-                <div class="logo-ticker-item">
-                    <div class="logo-ticker-dot"></div>
-                    <span class="logo-ticker-text">SACYR</span>
-                </div>
-                <div class="logo-ticker-item">
-                    <div class="logo-ticker-dot"></div>
-                    <span class="logo-ticker-text">FERROVIAL</span>
-                </div>
-                <div class="logo-ticker-item">
-                    <div class="logo-ticker-dot"></div>
-                    <span class="logo-ticker-text">BAYER</span>
-                </div>
-            </div>
+        <div class="logo-ticker-track">
+            <div class="logo-ticker-item"><div class="logo-ticker-dot"></div><span class="logo-ticker-text">REPSOL</span></div>
+            <div class="logo-ticker-item"><div class="logo-ticker-dot"></div><span class="logo-ticker-text">IBERDROLA</span></div>
+            <div class="logo-ticker-item"><div class="logo-ticker-dot"></div><span class="logo-ticker-text">NOVARTIS</span></div>
+            <div class="logo-ticker-item"><div class="logo-ticker-dot"></div><span class="logo-ticker-text">ACS GROUP</span></div>
+            <div class="logo-ticker-item"><div class="logo-ticker-dot"></div><span class="logo-ticker-text">ACCIONA</span></div>
+            <div class="logo-ticker-item"><div class="logo-ticker-dot"></div><span class="logo-ticker-text">SACYR</span></div>
+            <div class="logo-ticker-item"><div class="logo-ticker-dot"></div><span class="logo-ticker-text">FERROVIAL</span></div>
+            <div class="logo-ticker-item"><div class="logo-ticker-dot"></div><span class="logo-ticker-text">BAYER</span></div>
+            <!-- Duplicate for loop -->
+            <div class="logo-ticker-item"><div class="logo-ticker-dot"></div><span class="logo-ticker-text">REPSOL</span></div>
+            <div class="logo-ticker-item"><div class="logo-ticker-dot"></div><span class="logo-ticker-text">IBERDROLA</span></div>
+            <div class="logo-ticker-item"><div class="logo-ticker-dot"></div><span class="logo-ticker-text">NOVARTIS</span></div>
+            <div class="logo-ticker-item"><div class="logo-ticker-dot"></div><span class="logo-ticker-text">ACS GROUP</span></div>
+            <div class="logo-ticker-item"><div class="logo-ticker-dot"></div><span class="logo-ticker-text">ACCIONA</span></div>
+            <div class="logo-ticker-item"><div class="logo-ticker-dot"></div><span class="logo-ticker-text">SACYR</span></div>
+            <div class="logo-ticker-item"><div class="logo-ticker-dot"></div><span class="logo-ticker-text">FERROVIAL</span></div>
+            <div class="logo-ticker-item"><div class="logo-ticker-dot"></div><span class="logo-ticker-text">BAYER</span></div>
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section class="services-section">
-        <div class="services-header reveal">
-            <div>
-                <span class="section-label">Líneas Técnicas</span>
-                <h2 data-i18n="services_section_title">LÍNEAS DE SERVICIO CORPORATIVO</h2>
-            </div>
-            <p data-i18n="services_section_desc" style="max-width: 400px; font-size: 13.5px; text-align: right;">Soluciones y soporte técnico para optimizar el ciclo de vida de sus activos y proyectos.</p>
+    <!-- Services Grid Area -->
+    <section class="section-air bg-light-section">
+        <div style="text-align: center; margin-bottom: 60px;">
+            <span class="section-label">Portafolio Técnico</span>
+            <h2 class="section-title">Líneas de Ingeniería Corporativa</h2>
+            <p style="max-width: 600px; margin: 0 auto; font-size: 14px; color: var(--text-muted);">Estructura técnica dividida en grandes áreas operativas para garantizar la fiabilidad del diseño básico y de ejecución.</p>
         </div>
 
-        <div class="services-grid">
-            <!-- 1. Consultoría Técnica -->
-            <a href="consulting.html" class="service-card">
-                <div class="service-card-top">
-                    <span class="service-card-num">01</span>
-                    <div class="service-card-icon"><i class="fas fa-calculator"></i></div>
+        <div class="grid-cols-3">
+            <!-- 1. Ingeniería Integral -->
+            <div class="service-box">
+                <div class="service-box-header">
+                    <div class="service-box-icon"><i class="fas fa-drafting-compass"></i></div>
+                    <span class="service-box-num">01</span>
                 </div>
-                <h3 data-i18n="serv_consulting_title">Consultoría Técnica</h3>
-                <p data-i18n="serv_consulting_desc">Estudios de viabilidad, cálculo avanzado de estructuras (acero/hormigón) para naves logísticas e industriales, due diligence y proyectos de legalización.</p>
-                <div class="service-card-tags">
-                    <span class="service-card-tag">BIM LOD 400</span>
-                    <span class="service-card-tag">Eurocódigos</span>
-                    <span class="service-card-tag">CTE</span>
-                </div>
-                <div class="service-card-cta">Ver detalles <i class="fas fa-arrow-right"></i></div>
-            </a>
-
-            <!-- 2. Gestión de Proyectos -->
-            <a href="management.html" class="service-card">
-                <div class="service-card-top">
-                    <span class="service-card-num">02</span>
-                    <div class="service-card-icon"><i class="fas fa-project-diagram"></i></div>
-                </div>
-                <h3 data-i18n="serv_management_title">Gestión de Proyectos</h3>
-                <p data-i18n="serv_management_desc">Project Management integral y esquemas de contratación flexibles (Open Book y Llave en Mano). Control riguroso de Capex, plazos de ejecución y paradas industriales.</p>
-                <div class="service-card-tags">
-                    <span class="service-card-tag">PMI</span>
-                    <span class="service-card-tag">Open Book</span>
-                    <span class="service-card-tag">Turnkey EPC</span>
-                </div>
-                <div class="service-card-cta">Ver detalles <i class="fas fa-arrow-right"></i></div>
-            </a>
-
-            <!-- 3. Outsourcing Técnico -->
-            <a href="outsourcing.html" class="service-card">
-                <div class="service-card-top">
-                    <span class="service-card-num">03</span>
-                    <div class="service-card-icon"><i class="fas fa-users-cog"></i></div>
-                </div>
-                <h3 data-i18n="serv_outsourcing_title">Outsourcing Técnico</h3>
-                <p data-i18n="serv_outsourcing_desc">Cesión de ingenieros de cálculo, delineantes proyectistas BIM, jefes de obra e inspectores de calidad bajo demanda para resolver picos de trabajo.</p>
-                <div class="service-card-tags">
-                    <span class="service-card-tag">Calculistas</span>
-                    <span class="service-card-tag">BIM Modeler</span>
-                    <span class="service-card-tag">HSE Staffing</span>
-                </div>
-                <div class="service-card-cta">Ver detalles <i class="fas fa-arrow-right"></i></div>
-            </a>
-
-            <!-- 4. Soporte Especializado -->
-            <a href="support.html" class="service-card">
-                <div class="service-card-top">
-                    <span class="service-card-num">04</span>
-                    <div class="service-card-icon"><i class="fas fa-shield-halved"></i></div>
-                </div>
-                <h3 data-i18n="serv_support_title">Soporte Especializado</h3>
-                <p data-i18n="serv_support_desc">Dirección de obra e ingeniería de la propiedad (Owner's Engineering) en plantas energéticas y de procesos, pre-comisionado, comisionado y supervisión HSE.</p>
-                <div class="service-card-tags">
-                    <span class="service-card-tag">QA/QC</span>
-                    <span class="service-card-tag">Commissioning</span>
-                    <span class="service-card-tag">Owner's Eng</span>
-                </div>
-                <div class="service-card-cta">Ver detalles <i class="fas fa-arrow-right"></i></div>
-            </a>
-        </div>
-    </section>
-
-    <!-- Sectors Section -->
-    <section class="sectors-section reveal">
-        <div class="sectors-header">
-            <div>
-                <span class="section-label">Especialidad Vertical</span>
-                <h2 data-i18n="sect_section_title">SECTORES DE ESPECIALIZACIÓN</h2>
-            </div>
-            <p data-i18n="sect_section_desc" style="max-width: 400px; font-size: 13.5px; text-align: right;">Adaptamos nuestras metodologías e ingeniería a los requisitos regulatorios y de calidad específicos de cada sector.</p>
-        </div>
-        
-        <div class="sectors-grid">
-            <!-- Pharma -->
-            <div class="sector-card">
-                <span class="sector-card-id" style="color: rgba(0, 245, 212, 0.08);">01</span>
-                <h3>Sector Farmacéutico</h3>
-                <p>Diseño técnico de salas blancas, climatización estéril (HVAC), instalaciones APQ, distribución de fluidos limpios y cumplimiento de las directrices GMP y de la FDA. Puesta en marcha de líneas de envasado.</p>
-                <ul class="sector-card-list">
-                    <li><span class="sector-card-bullet" style="background: var(--primary-cyan);"></span> HVAC Estéril & Salas Blancas</li>
-                    <li><span class="sector-card-bullet" style="background: var(--primary-cyan);"></span> Acreditaciones GMP / FDA</li>
-                    <li><span class="sector-card-bullet" style="background: var(--primary-cyan);"></span> Fluidos Limpios (WFI/PW)</li>
+                <h3>Área de Ingeniería</h3>
+                <p>Estudios ejecutivos, memorias de cálculo de estructuras y diseño técnico para grandes desarrollos.</p>
+                <ul class="service-box-list">
+                    <li>Cálculo de estructuras metálicas</li>
+                    <li>Cálculo de instalaciones industriales</li>
+                    <li>Instalaciones eléctricas y fotovoltaicas</li>
+                    <li>Instalaciones hidráulicas, climatización y PCI</li>
+                    <li>Ingeniería básica, de detalle y ejecución</li>
                 </ul>
-                <a href="sectors.html#pharma" class="sector-card-cta" style="color: var(--primary-cyan);">Ver Soluciones <i class="fas fa-arrow-right"></i></a>
+                <a href="consulting.html" class="service-box-cta">Conocer Capacidades <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <!-- 2. Oficina Técnica CAD -->
+            <div class="service-box">
+                <div class="service-box-header">
+                    <div class="service-box-icon"><i class="fas fa-desktop"></i></div>
+                    <span class="service-box-num">02</span>
+                </div>
+                <h3>Oficina Técnica CAD & BIM</h3>
+                <p>Departamento CAD de refuerzo externo e inmediato para grandes empresas, ingenierías y promotores EPC.</p>
+                <ul class="service-box-list">
+                    <li>Externalización del departamento CAD</li>
+                    <li>Delineación especializada e ingenieros proyectistas</li>
+                    <li>Modelado BIM y planos de taller (fabricación/montaje)</li>
+                    <li>Levantamientos industriales y planos As-Built</li>
+                    <li>Refuerzo temporal sin aumentar plantilla directa</li>
+                </ul>
+                <a href="cad.html" class="service-box-cta">Conocer Solución <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <!-- 3. Consultoría Industrial -->
+            <div class="service-box">
+                <div class="service-box-header">
+                    <div class="service-box-icon"><i class="fas fa-chart-line"></i></div>
+                    <span class="service-box-num">03</span>
+                </div>
+                <h3>Área de Consultoría</h3>
+                <p>Análisis de procesos, optimización de sistemas y cumplimiento de marcos regulatorios.</p>
+                <ul class="service-box-list">
+                    <li>Consultoría técnica y auditorías técnicas</li>
+                    <li>Consultoría energética e implantación de ISO 50001</li>
+                    <li>Optimización de procesos y reducción de costes</li>
+                    <li>Transformación digital e implantación documental</li>
+                    <li>Mejora de la productividad industrial</li>
+                </ul>
+                <a href="services.html" class="service-box-cta">Ver Consultoría <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <!-- 4. Outsourcing Técnico -->
+            <div class="service-box">
+                <div class="service-box-header">
+                    <div class="service-box-icon"><i class="fas fa-users"></i></div>
+                    <span class="service-box-num">04</span>
+                </div>
+                <h3>Outsourcing de Personal</h3>
+                <p>Extensiones temporales o permanentes de departamento técnico (Engineering Staffing). Perfiles altamente cualificados.</p>
+                <ul class="service-box-list">
+                    <li>Ingenieros Mecánicos, Eléctricos, Civiles y de Procesos</li>
+                    <li>Project Managers y Coordinadores de obra</li>
+                    <li>Delineantes CAD, Modeladores BIM y Técnicos QA/QC</li>
+                    <li>Supervisores de obra y Especialistas de calidad</li>
+                </ul>
+                <a href="outsourcing.html" class="service-box-cta">Ver Staffing <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <!-- 5. Energía Fotovoltaica -->
+            <div class="service-box">
+                <div class="service-box-header">
+                    <div class="service-box-icon"><i class="fas fa-solar-panel"></i></div>
+                    <span class="service-box-num">05</span>
+                </div>
+                <h3>Energía Fotovoltaica</h3>
+                <p>Soporte de ingeniería y montaje especializado en parques fotovoltaicos utility scale y autoconsumos.</p>
+                <ul class="service-box-list">
+                    <li>Ingeniería básica y de detalle fotovoltaica</li>
+                    <li>Montaje de estructuras líderes (Soltec, Ideematec, Axial)</li>
+                    <li>Montaje de paneles y puesta en marcha de sistemas</li>
+                    <li>Mantenimiento O&M y Dirección técnica</li>
+                </ul>
+                <a href="sectors.html#energy" class="service-box-cta">Ver Fotovoltaica <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <!-- 6. Calidad & Cualificación -->
+            <div class="service-box">
+                <div class="service-box-header">
+                    <div class="service-box-icon"><i class="fas fa-certificate"></i></div>
+                    <span class="service-box-num">06</span>
+                </div>
+                <h3>Calidad & Cualificación GMP</h3>
+                <p>Controles de calidad para montajes industriales y cualificación de equipos farmacéuticos.</p>
+                <ul class="service-box-list">
+                    <li>QA/QC, controles dimensionales e inspecciones de obra</li>
+                    <li>Comisionado, precomisionado y punch lists</li>
+                    <li>Cualificación IQ/OQ/PQ para equipos farmacéuticos</li>
+                    <li>Salas blancas y cumplimiento normativo GMP / FDA</li>
+                </ul>
+                <a href="support.html" class="service-box-cta">Ver Calidad <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cases of Success (Track Record) -->
+    <section class="section-air">
+        <div class="grid-cols-2" style="align-items: end; margin-bottom: 60px;">
+            <div>
+                <span class="section-label">PROYECTOS COMPLEJOS</span>
+                <h2 class="section-title" style="margin-bottom: 0;">Casos de Éxito y Referencias</h2>
+            </div>
+            <p style="color: var(--text-muted); font-size: 14.5px;">Documentamos nuestras intervenciones mediante parámetros de control reales e hitos verificados.</p>
+        </div>
+
+        <div class="grid-cols-3">
+            <!-- Project 1 -->
+            <div class="service-box" style="padding: 30px;">
+                <span style="font-size: 9px; font-weight: 700; letter-spacing: 0.15em; color: var(--brand-blue); text-transform: uppercase; margin-bottom: 16px; display: block;">Ingeniería Mecánica & BIM</span>
+                <h3 style="font-size: 17px; margin-bottom: 12px;">Planta Solar de Autoconsumo Industrial — 4.2 MWp</h3>
+                <p style="font-size: 13.5px; line-height: 1.6;">Ingeniería ejecutiva de detalle y comisionado sobre cubierta farmacéutica. Integración de microrred y almacenamiento por baterías (BESS).</p>
+                <div style="display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--border-light); padding-top: 16px; margin-top: auto;">
+                    <div><span style="font-weight: 700; font-size: 14px;">4.2 MWp</span><span style="display: block; font-size: 9px; color: var(--text-light);">Potencia</span></div>
+                    <div><span style="font-weight: 700; font-size: 14px;">3.4 Años</span><span style="display: block; font-size: 9px; color: var(--text-light);">Payback</span></div>
+                    <div><span style="font-weight: 700; font-size: 14px;">1.200 t</span><span style="display: block; font-size: 9px; color: var(--text-light);">Ahorro CO2</span></div>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="service-box" style="padding: 30px;">
+                <span style="font-size: 9px; font-weight: 700; letter-spacing: 0.15em; color: var(--brand-blue); text-transform: uppercase; margin-bottom: 16px; display: block;">Seguridad Industrial</span>
+                <h3 style="font-size: 17px; margin-bottom: 12px;">Legalización de Tanques y Sistema APQ en Planta Química</h3>
+                <p style="font-size: 13.5px; line-height: 1.6;">Tramitación, memorias de cálculo de cimentación y justificación técnica para el almacenamiento de reactivos químicos y PCI.</p>
+                <div style="display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--border-light); padding-top: 16px; margin-top: auto;">
+                    <div><span style="font-weight: 700; font-size: 14px;">APQ-1</span><span style="display: block; font-size: 9px; color: var(--text-light);">Zonificación</span></div>
+                    <div><span style="font-weight: 700; font-size: 14px;">6 Meses</span><span style="display: block; font-size: 9px; color: var(--text-light);">Plazo</span></div>
+                    <div><span style="font-weight: 700; font-size: 14px;">100%</span><span style="display: block; font-size: 9px; color: var(--text-light);">Conformidad</span></div>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="service-box" style="padding: 30px;">
+                <span style="font-size: 9px; font-weight: 700; letter-spacing: 0.15em; color: var(--brand-blue); text-transform: uppercase; margin-bottom: 16px; display: block;">GMP Cualificación</span>
+                <h3 style="font-size: 17px; margin-bottom: 12px;">Cualificación IQ/OQ/PQ de Sala Blanca Farmacéutica</h3>
+                <p style="font-size: 13.5px; line-height: 1.6;">Diseño técnico de HVAC estéril y elaboración de protocolos de validación conformes a directivas AEMPS y FDA.</p>
+                <div style="display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--border-light); padding-top: 16px; margin-top: auto;">
+                    <div><span style="font-weight: 700; font-size: 14px;">ISO 6</span><span style="display: block; font-size: 9px; color: var(--text-light);">Sala</span></div>
+                    <div><span style="font-weight: 700; font-size: 14px;">60 ACH</span><span style="display: block; font-size: 9px; color: var(--text-light);">Renovaciones</span></div>
+                    <div><span style="font-weight: 700; font-size: 14px;">FDA</span><span style="display: block; font-size: 9px; color: var(--text-light);">Normativa</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Process -->
+    <section class="section-air bg-light-section">
+        <div class="grid-cols-2" style="gap: 80px;">
+            <div>
+                <span class="section-label">TRAZABILIDAD</span>
+                <h2 class="section-title">Nuestra Metodología de Proyecto</h2>
+                <p style="margin-bottom: 30px; font-size: 14.5px;">Garantizamos que la ejecución se ajuste al proyecto constructivo original mediante hitos definidos.</p>
+                <a href="contact.html" class="cta-button primary">Solicitar reunión</a>
             </div>
             
-            <!-- Energy -->
-            <div class="sector-card">
-                <span class="sector-card-id" style="color: rgba(240, 180, 41, 0.08);">02</span>
-                <h3>Energía y Renovables</h3>
-                <p>Asistencia técnica y dirección de obra (Owner's Engineering) en parques fotovoltaicos utility scale y autoconsumo industrial de alta potencia. Supervisión del cálculo de estructuras fijas y seguidor.</p>
-                <ul class="sector-card-list">
-                    <li><span class="sector-card-bullet" style="background: var(--accent-gold);"></span> Proyectos EPC Fotovoltaica</li>
-                    <li><span class="sector-card-bullet" style="background: var(--accent-gold);"></span> Almacenamiento BESS</li>
-                    <li><span class="sector-card-bullet" style="background: var(--accent-gold);"></span> Subestaciones y Líneas MT</li>
-                </ul>
-                <a href="sectors.html#energy" class="sector-card-cta" style="color: var(--accent-gold);">Ver Soluciones <i class="fas fa-arrow-right"></i></a>
-            </div>
-            
-            <!-- Industry -->
-            <div class="sector-card">
-                <span class="sector-card-id" style="color: rgba(255, 0, 85, 0.08);">03</span>
-                <h3>Industria y Mecánica</h3>
-                <p>Proyectos ejecutivos e ingeniería de detalle para legalización de plantas industriales (RITE, PCI, APQ). Cálculo mecánico de fluidos, aire comprimido, y estructuras metálicas de soporte.</p>
-                <ul class="sector-card-list">
-                    <li><span class="sector-card-bullet" style="background: var(--secondary-magenta);"></span> Legalización APQ / PCI / RITE</li>
-                    <li><span class="sector-card-bullet" style="background: var(--secondary-magenta);"></span> Trazados e Hidráulica</li>
-                    <li><span class="sector-card-bullet" style="background: var(--secondary-magenta);"></span> Auditorías de Energía (ISO 50001)</li>
-                </ul>
-                <a href="sectors.html#industry" class="sector-card-cta" style="color: var(--secondary-magenta);">Ver Soluciones <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Cases of Success (Projects Highlight) -->
-    <section class="projects-section">
-        <div class="projects-header reveal">
-            <div>
-                <span class="section-label">Fichas Técnicas</span>
-                <h2>Casos de éxito destacados</h2>
-            </div>
-            <a href="projects.html" class="cta-button secondary">Ver todos los proyectos</a>
-        </div>
-
-        <div class="projects-grid">
-            <div class="project-card">
-                <span class="project-card-tag">Fotovoltaica EPC</span>
-                <h3>Planta Solar de Autoconsumo Industrial — 4.2 MWp</h3>
-                <p>Ingeniería de detalle, compras e instalación de paneles en cubierta para farmacéutica líder. Integración de almacenamiento BESS y monitorización SCADA.</p>
-                <div class="project-kpis">
-                    <div>
-                        <span class="project-kpi-val">4.2 MWp</span>
-                        <span class="project-kpi-lbl">Potencia</span>
-                    </div>
-                    <div>
-                        <span class="project-kpi-val">3.4 años</span>
-                        <span class="project-kpi-lbl">Payback</span>
-                    </div>
-                    <div>
-                        <span class="project-kpi-val">-1200t</span>
-                        <span class="project-kpi-lbl">CO₂ / Año</span>
+            <div class="timeline-flow">
+                <div class="timeline-line"></div>
+                
+                <div class="timeline-node">
+                    <div class="timeline-bullet"></div>
+                    <div class="timeline-desc">
+                        <h4>Fase 1: Viabilidad e Ingeniería Básica</h4>
+                        <p>Evaluamos condicionantes normativos y elaboramos diagramas de proceso (P&ID) y estimación de Capex.</p>
                     </div>
                 </div>
-                <a href="projects.html" class="project-card-cta">Ficha de Proyecto <i class="fas fa-arrow-right"></i></a>
-            </div>
-
-            <div class="project-card">
-                <span class="project-card-tag">Industria APQ</span>
-                <h3>Legalización de Planta Química e Instalaciones APQ</h3>
-                <p>Estudio de zonificación ATEX, legalización de tanques de reactivos bajo norma APQ-1 y reforma de sistemas de extinción contra incendios (PCI).</p>
-                <div class="project-kpis">
-                    <div>
-                        <span class="project-kpi-val">APQ-1</span>
-                        <span class="project-kpi-lbl">Normativa</span>
-                    </div>
-                    <div>
-                        <span class="project-kpi-val">6 meses</span>
-                        <span class="project-kpi-lbl">Plazo</span>
-                    </div>
-                    <div>
-                        <span class="project-kpi-val">100%</span>
-                        <span class="project-kpi-lbl">Aprobado</span>
+                <div class="timeline-node">
+                    <div class="timeline-bullet"></div>
+                    <div class="timeline-desc">
+                        <h4>Fase 2: Ingeniería de Detalle y Modelado BIM</h4>
+                        <p>Diseño en modelos 3D coordinados LOD 400 y cálculo de estructuras metálicas visadas para ejecución.</p>
                     </div>
                 </div>
-                <a href="projects.html" class="project-card-cta">Ficha de Proyecto <i class="fas fa-arrow-right"></i></a>
-            </div>
-
-            <div class="project-card">
-                <span class="project-card-tag">Sala Blanca GMP</span>
-                <h3>Ingeniería y Calificación de Sala Blanca ISO 6</h3>
-                <p>Diseño conceptual, básico y de detalle de sala estéril para fabricación de ampollas. HVAC estéril y validación de instalaciones ante AEMPS.</p>
-                <div class="project-kpis">
-                    <div>
-                        <span class="project-kpi-val">ISO 6</span>
-                        <span class="project-kpi-lbl">Clase</span>
-                    </div>
-                    <div>
-                        <span class="project-kpi-val">60 ACH</span>
-                        <span class="project-kpi-lbl">Flujo Aire</span>
-                    </div>
-                    <div>
-                        <span class="project-kpi-val">GMP A/B</span>
-                        <span class="project-kpi-lbl">Estándar</span>
-                    </div>
-                </div>
-                <a href="projects.html" class="project-card-cta">Ficha de Proyecto <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Work Process Section (Timeline) -->
-    <section class="process-section reveal">
-        <div class="process-header">
-            <span class="section-label">Metodología de Trabajo</span>
-            <h2>Proceso de ingeniería estructurado</h2>
-            <p>Garantizamos la trazabilidad técnica total en cada una de las fases de ejecución del proyecto, asegurando la optimización del Capex/Opex de su planta.</p>
-        </div>
-
-        <div class="process-timeline">
-            <div class="process-timeline-line"></div>
-
-            <div class="process-step">
-                <div class="process-step-node"></div>
-                <div class="process-step-content">
-                    <div class="process-step-header">
-                        <span class="process-step-num">01</span>
-                        <h3>Due Diligence & Viabilidad</h3>
-                    </div>
-                    <p>Evaluamos los consumos históricos, normativas aplicables y viabilidad urbanística del emplazamiento para generar el modelo económico de viabilidad.</p>
-                    <div class="process-step-meta">
-                        <div class="process-step-meta-item">
-                            <span class="lbl">Duración</span>
-                            <span class="val">1 - 2 Semanas</span>
-                        </div>
-                        <div class="process-step-meta-item">
-                            <span class="lbl">Entregable</span>
-                            <span class="val">Informe Viabilidad</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="process-step">
-                <div class="process-step-node"></div>
-                <div class="process-step-content">
-                    <div class="process-step-header">
-                        <span class="process-step-num">02</span>
-                        <h3>Ingeniería Básica & Modelado</h3>
-                    </div>
-                    <p>Elaboramos diagramas de flujo de proceso (P&ID), planos de implantación preliminares, simulaciones térmicas e hidráulicas y estimación presupuestaria.</p>
-                    <div class="process-step-meta">
-                        <div class="process-step-meta-item">
-                            <span class="lbl">Duración</span>
-                            <span class="val">3 - 4 Semanas</span>
-                        </div>
-                        <div class="process-step-meta-item">
-                            <span class="lbl">Entregable</span>
-                            <span class="val">Ingeniería Básica</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="process-step">
-                <div class="process-step-node"></div>
-                <div class="process-step-content">
-                    <div class="process-step-header">
-                        <span class="process-step-num">03</span>
-                        <h3>Ingeniería de Detalle & BIM</h3>
-                    </div>
-                    <p>Modelado 3D BIM (LOD 400) libre de colisiones, cálculo de estructuras, dimensionamiento final de tuberías, esquemas eléctricos y visado técnico.</p>
-                    <div class="process-step-meta">
-                        <div class="process-step-meta-item">
-                            <span class="lbl">Duración</span>
-                            <span class="val">4 - 8 Semanas</span>
-                        </div>
-                        <div class="process-step-meta-item">
-                            <span class="lbl">Entregable</span>
-                            <span class="val">Proyecto Ejecutivo BIM</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="process-step">
-                <div class="process-step-node"></div>
-                <div class="process-step-content">
-                    <div class="process-step-header">
-                        <span class="process-step-num">04</span>
-                        <h3>Procura y Gestión de Obra</h3>
-                    </div>
-                    <p>Homologación de contratistas, gestión de compras de equipos mayores (inversores, climatizadoras, PCI) y dirección facultativa permanente en campo.</p>
-                    <div class="process-step-meta">
-                        <div class="process-step-meta-item">
-                            <span class="lbl">Duración</span>
-                            <span class="val">Según Obra</span>
-                        </div>
-                        <div class="process-step-meta-item">
-                            <span class="lbl">Entregable</span>
-                            <span class="val">Dirección Facultativa</span>
-                        </div>
+                <div class="timeline-node">
+                    <div class="timeline-bullet"></div>
+                    <div class="timeline-desc">
+                        <h4>Fase 3: Dirección Facultativa y QA/QC</h4>
+                        <p>Supervisión in-situ del montaje, resolución de incidencias constructivas y validación de calidad dimensional.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section class="contact-section reveal" id="contacto">
+    <!-- Contact Form Section -->
+    <section class="section-air" id="contacto">
         <div class="contact-header">
-            <span class="section-label">Canal Corporativo B2B</span>
-            <h2 data-i18n="lead_title">SOLICITAR PROPUESTA TÉCNICA</h2>
-            <p data-i18n="lead_desc">¿Tiene un proyecto industrial o necesita incorporar ingenieros de forma inmediata? Póngase en contacto con nuestra oficina técnica para evaluar sus requerimientos y emitir una propuesta técnica y económica personalizada.</p>
+            <span class="section-label">OFICINA TÉCNICA CENTRAL</span>
+            <h2 class="section-title" data-i18n="lead_title">SOLICITAR PROPUESTA TÉCNICA</h2>
+            <p data-i18n="lead_desc" class="section-desc" style="margin: 0 auto 40px;">¿Tiene un proyecto industrial o necesita incorporar ingenieros de forma inmediata? Póngase en contacto con nuestra oficina técnica para evaluar sus requerimientos y emitir una propuesta técnica y económica personalizada.</p>
         </div>
 
         <div class="contact-grid">
+            <!-- Left panel: guarantees -->
             <div class="contact-info-panel">
-                <h3>Garantías de Oficina Técnica</h3>
+                <h3>Garantías de Licitación B2B</h3>
                 <ul class="contact-guarantees">
                     <li>
                         <div class="contact-guarantees-icon"><i class="fas fa-clock"></i></div>
@@ -597,60 +406,60 @@
                 </ul>
 
                 <div class="contact-direct">
-                    <span class="contact-direct-lbl">Línea Directa Directiva</span>
+                    <span class="contact-direct-lbl">Dirección de Operaciones</span>
                     <a href="mailto:proyectos@consultomik.es" class="contact-direct-email">proyectos@consultomik.es</a>
                     <a href="tel:+34910000000" class="contact-direct-phone">+34 910 000 000</a>
                     <p class="contact-direct-hours">Disponible Lunes a Viernes de 8:00 a 18:00 CET</p>
                 </div>
             </div>
 
+            <!-- Right panel: form -->
             <div class="contact-form-panel">
                 <form action="https://formsubmit.co/proyectos@consultomik.es" method="POST">
-                    <!-- Formsubmit redirects / config -->
                     <input type="hidden" name="_subject" value="Nueva Solicitud de Propuesta Técnica B2B">
                     <input type="hidden" name="_next" value="https://consultomik.es/index.html?success=true">
                     
                     <div class="contact-form-row">
                         <div class="form-group">
-                            <label>Nombre Completo *</label>
-                            <input type="text" name="name" required placeholder="Ing. Juan García" class="input-corporate">
+                            <label>Nombre y Apellidos *</label>
+                            <input type="text" name="name" required placeholder="Ing. Juan García" class="input-field">
                         </div>
                         <div class="form-group">
                             <label>Email Corporativo *</label>
-                            <input type="email" name="email" required placeholder="j.garcia@empresa.es" class="input-corporate">
+                            <input type="email" name="email" required placeholder="j.garcia@empresa.es" class="input-field">
                         </div>
                     </div>
 
                     <div class="contact-form-row">
                         <div class="form-group">
                             <label>Empresa / Organización *</label>
-                            <input type="text" name="company" required placeholder="Farmacéutica S.A." class="input-corporate">
+                            <input type="text" name="company" required placeholder="Constructora S.A." class="input-field">
                         </div>
                         <div class="form-group">
-                            <label>Línea de Interés *</label>
-                            <select name="service_interest" required class="input-corporate">
-                                <option value="" disabled selected>Seleccione área de interés...</option>
-                                <option value="Cálculo Estructural & BIM">Cálculo Estructural & BIM</option>
-                                <option value="Consultoría Energética ISO 50001">Consultoría Energética ISO 50001</option>
-                                <option value="Autoconsumo Solar EPC">Autoconsumo Solar EPC</option>
-                                <option value="Outsourcing Técnico">Outsourcing Técnico / Personal</option>
-                                <option value="Dirección Facultativa / QAQC">Dirección Facultativa / QAQC</option>
+                            <label>Línea Técnica de Interés *</label>
+                            <select name="service_interest" required class="input-field">
+                                <option value="" disabled selected>Seleccione área...</option>
+                                <option value="Ingeniería y Cálculo">Ingeniería y Cálculo de Estructuras</option>
+                                <option value="Oficina Técnica CAD">Oficina Técnica CAD & Delineación</option>
+                                <option value="Outsourcing de Personal">Outsourcing Técnico / Personal</option>
+                                <option value="Calidad QAQC">Dirección de Obra & QA/QC</option>
+                                <option value="Cualificación GMP">Cualificación Farmacéutica GMP</option>
                             </select>
                         </div>
                     </div>
 
                     <div class="form-group">
-                        <label>Requerimientos Técnicos del Proyecto *</label>
-                        <textarea name="message" required placeholder="Describa el alcance de la obra, potencia requerida en MWp, plazos de licitación o perfiles técnicos demandados..." class="input-corporate"></textarea>
+                        <label>Alcance Técnico / Descripción del Requerimiento *</label>
+                        <textarea name="message" required placeholder="Indíquenos los plazos de entrega, potencia fotovoltaica demandada, perfiles que necesita reforzar o características de la nave..." class="input-field"></textarea>
                     </div>
 
-                    <div class="form-gdpr">
-                        <input type="checkbox" required id="gdpr_check">
-                        <label htmlFor="gdpr_check">Acepto la <a href="company.html">Política de Privacidad</a> de Consultomik para el tratamiento de mis datos de licitación conforme al RGPD.</label>
+                    <div class="form-checkbox">
+                        <input type="checkbox" required id="privacy_policy">
+                        <label for="privacy_policy">Acepto la <a href="company.html">Política de Privacidad</a> de Consultomik para el tratamiento de mis datos de licitación y NDA conforme al RGPD.</label>
                     </div>
 
-                    <button type="submit" class="cta-button primary" style="width: 100%; justify-content: center;">
-                        <span>Enviar Solicitud Técnica</span>
+                    <button type="submit" class="cta-button primary" style="width: 100%;">
+                        <span>Solicitar presupuesto</span>
                         <i class="fas fa-arrow-right"></i>
                     </button>
                 </form>
@@ -658,67 +467,82 @@
         </div>
     </section>
 
+    <!-- Call-Back Modal Dialog -->
+    <div id="callModal" class="modal-overlay">
+        <div class="modal-card">
+            <button class="modal-close">&times;</button>
+            <h3 data-i18n="call_title">Queremos llamarte</h3>
+            <p data-i18n="call_desc" class="text-muted" style="font-size: 12px; margin-bottom: 24px;">Indíquenos sus datos y un ingeniero de nuestra oficina técnica le telefoneará en el horario preferido.</p>
+            <form action="https://formsubmit.co/proyectos@consultomik.es" method="POST">
+                <input type="hidden" name="_subject" value="Solicitud de Llamada (Te Llamamos - Modal)">
+                <input type="hidden" name="_next" value="https://consultomik.es/index.html?success=true">
+                
+                <div class="form-group">
+                    <label data-i18n="form_name">Nombre y Apellidos *</label>
+                    <input type="text" name="name" required placeholder="Ing. Carlos Ruiz" class="input-field">
+                </div>
+                <div class="form-group">
+                    <label data-i18n="form_phone">Teléfono Directo *</label>
+                    <input type="tel" name="phone" required placeholder="+34 600 000 000" class="input-field">
+                </div>
+                <div class="form-group">
+                    <label data-i18n="form_company">Empresa / Organización *</label>
+                    <input type="text" name="company" required placeholder="Sacyr Industrial" class="input-field">
+                </div>
+                <div class="form-group">
+                    <label data-i18n="form_hours">Horario de Preferencia *</label>
+                    <select name="preferred_time" required class="input-field">
+                        <option value="morning" data-i18n="form_hours_morning">Mañana (09:00 - 14:00)</option>
+                        <option value="afternoon" data-i18n="form_hours_afternoon">Tarde (14:00 - 18:00)</option>
+                    </select>
+                </div>
+                <button type="submit" class="cta-button primary" style="width: 100%;" data-i18n="form_btn_call">Llamadme</button>
+            </form>
+        </div>
+    </div>
+
     <!-- Footer Section -->
     <footer>
         <div class="footer-top">
-            <div class="footer-cta-band">
-                <div class="footer-cta-text">
-                    <h3>¿Preparando una licitación o RFP?</h3>
-                    <p>Envíe sus pliegos de bases o planos preliminares de forma segura para evaluación técnica.</p>
-                </div>
-                <a href="#contacto" class="cta-button primary">Enviar Licitación <i class="fas fa-file-pdf"></i></a>
-            </div>
-        </div>
-
-        <div class="footer-content">
             <div class="footer-col-brand">
-                <a href="index.html" class="logo-container" style="margin-bottom: 24px;">
-                    <div class="logo-box">
-                        <div class="logo-ring"></div>
-                        <div class="logo-core"></div>
-                    </div>
+                <a href="index.html" class="logo-container">
+                    <div class="logo-box"></div>
                     <div class="logo-text">
-                        <span class="logo-title" style="font-size: 15px;">Consultomik</span>
-                        <span class="logo-subtitle" style="font-size: 7px;">Advanced Engineering</span>
+                        <span class="logo-title" style="font-size: 16px;">Consultomik</span>
+                        <span class="logo-subtitle" style="font-size: 8px;">Advanced Engineering</span>
                     </div>
                 </a>
-                <p>Ingeniería de detalle, consultoría energética y gestión de proyectos llave en mano (EPC) para el sector corporativo.</p>
+                <p>Oficina de ingeniería industrial avanzada, diseño estructural, departamento CAD y cualificación GMP para laboratorios.</p>
                 <div class="footer-certifications">
                     <span class="footer-cert-badge">ISO 9001</span>
                     <span class="footer-cert-badge">ISO 14001</span>
                     <span class="footer-cert-badge">ISO 50001</span>
                 </div>
-                <div class="footer-socials">
-                    <a href="https://linkedin.com/company/consultomik" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-                    <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
-                </div>
             </div>
 
             <div>
-                <h4>Líneas Técnicas</h4>
+                <h4>Ingeniería</h4>
                 <ul class="footer-links">
-                    <li><a href="consulting.html">Calculo Estructural</a></li>
-                    <li><a href="consulting.html">Modelado BIM</a></li>
-                    <li><a href="management.html">Project Management</a></li>
-                    <li><a href="outsourcing.html">Outsourcing / Cesión</a></li>
-                    <li><a href="support.html">Dirección de Obra</a></li>
+                    <li><a href="consulting.html">Cálculo de Estructuras</a></li>
+                    <li><a href="cad.html">Delineación CAD</a></li>
+                    <li><a href="cad.html">Modelado BIM</a></li>
+                    <li><a href="outsourcing.html">Outsourcing Técnico</a></li>
                 </ul>
             </div>
 
             <div>
-                <h4>Sectores</h4>
+                <h4>Servicios</h4>
                 <ul class="footer-links">
-                    <li><a href="sectors.html#pharma">Farmacéutico</a></li>
-                    <li><a href="sectors.html#energy">Energía y Redes</a></li>
-                    <li><a href="sectors.html#industry">Industria Mecánica</a></li>
-                    <li><a href="projects.html">Casos de éxito</a></li>
+                    <li><a href="sectors.html#energy">Fotovoltaica & O&M</a></li>
+                    <li><a href="support.html">Control de Calidad QA/QC</a></li>
+                    <li><a href="support.html">Cualificación GMP</a></li>
+                    <li><a href="projects.html">Casos de Éxito</a></li>
                 </ul>
             </div>
 
             <div>
                 <h4>Contacto Corporativo</h4>
-                <ul class="footer-col-contact-list">
+                <ul class="footer-contact-list">
                     <li>
                         <i class="fas fa-map-marker-alt"></i>
                         <span>Paseo de la Castellana 95, Pl. 15<br>28046 Madrid, España</span>
@@ -736,9 +560,9 @@
         </div>
 
         <div class="footer-bottom">
-            <div class="footer-bottom-content">
+            <div class="footer-bottom-wrapper">
                 <p>&copy; 2026 Consultomik Advanced Engineering · MIK Group. Todos los derechos reservados.</p>
-                <p>Cálculos bajo Eurocódigos, CTE e ISO 50001.</p>
+                <p>Ingeniería Industrial · Normas Eurocódigos y CTE.</p>
             </div>
         </div>
     </footer>
